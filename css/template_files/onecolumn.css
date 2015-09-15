@@ -1,0 +1,595 @@
+/* GENERAL STYLING */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font: 62.5%/1.5 Verdana, Tahoma, Arial, sans-serif; /* 1.5 sets the line height */	
+	color: #111;
+	background: #EEE;
+}
+a:link {
+	border-bottom: 1px dotted #AAA;
+	text-decoration: none;
+}
+a:visited {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+}
+a:hover {
+	border-bottom: 1px solid;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+a:active.noborder, a:hover.noborder, a:visited.noborder, a:link.noborder, a.noborder {
+	border: none;
+}
+acronym {
+	cursor: help;
+	border-bottom: 1px dotted #777;
+}
+blockquote {
+	margin: 5px 15px;
+	padding: 0 0 0 28px;  	
+	border: 1px solid #f2f2f2; 
+	border-left: 3px solid #0052A4;  
+	font: bold 1.2em/1.5em "Trebuchet MS", Verdana, Arial, Helvetica, "URW Gothic L", sans-serif; 
+	color: #444;
+	background: #FAFAFA url(/inc/html/GFDL/pix/quotes.gif) no-repeat 2px 2px;
+}
+h1 {
+	font: bold 3em Arial,Helvetica,sans-serif;
+	color: #727272;
+	margin: 5px 0;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 4px;
+	text-shadow: 0 1px 1px #bbb;
+}
+h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, "URW Gothic L", sans-serif;
+	margin: 5px 0;
+}
+h2 {
+	font-size: 2.0em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+h3.graybg {
+	background-image: url('/inc/html/GFDL/pix/gradient-gray.gif');
+	background-repeat: repeat-x;
+	color: #EDEDED;
+	padding-left: 10px;
+}
+h3.bluebg {
+	background-image: url('/inc/html/GFDL/pix/gradient-blue.gif');
+	background-repeat: repeat-x;
+	color: #EDEDED;
+	padding-left: 10px;
+}
+hr {
+	border-bottom: 1px solid #999;
+}
+pre, code {
+	background: #FAFAFA;
+	border-style: solid;
+	border-width: 1px 1px 1px 3px;
+	border-color: #E1F0FF #E1F0FF #E1F0FF #0052A4;
+	display: block;
+	font-family: 'Lucida Console','courier new',monospace;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 5px 0pt;
+	overflow: auto;
+	padding: 4px 8px;
+	text-align: left;
+}
+tt, samp {
+	color: #006600;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+/* start - table */
+table {
+	border-collapse: separate;
+}
+table.bordered {
+	border: 1px solid #CCC;
+	background: #FFF;
+}
+th {
+	font-weight: bold; 
+	color: #fff;
+	background: #0052A4 url('/inc/html/GFDL/pix/gradient-blue.gif') repeat-x 0 0;
+	padding:0 10px;
+	color: #FFF;
+}
+tr {
+	height: 30px;
+}
+td {
+	padding:0 10px;
+/*	border-left: 1px solid #FFF;
+	border-bottom: 1px solid #FFF; */
+}
+tr.row-a {
+	background: #F8F8F8;
+
+}
+tr.row-b {
+	background: #EFEFEF;
+}
+blockquote p, td p, li p, li li {
+	/* Safeguard nesting issues */ 
+	font-size: 1em;
+}
+/* HEADER */
+#header_container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 120px;
+	background: #2c3577 url('/inc/html/GFDL/pix/header_bg_gradient.gif') repeat-x;
+	text-align: center;
+	border-bottom: 2px solid #C2C2C2;
+}
+#header {
+	background-position: 0px 0px;
+	width: 960px;
+	height: 120px;
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	background-image: url('/inc/html/GFDL/pix/header_sine.jpg');
+	background-repeat: no-repeat;
+}
+#noaa_logo {
+	width: 54px;
+	height: 54px;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 8px;
+	right: 0px;
+}
+#search_form {
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+}
+#search_form form {
+	display: inline;
+}
+/* NAVIGATION */
+#nav_container {
+	text-align: center;
+	background: #555454 url('/inc/html/GFDL/pix/nav_gradient.gif') repeat-x;
+}
+#nav, #nav ul {
+	width: 69em; /* WAS 960px but changing to ems scales better when user increases font - use max-width too? */;
+	margin: 0 auto;
+	list-style: none;
+	font: bold 1.4em/2.8em "Trebuchet MS", "URW Gothic L", sans-serif;
+	text-transform: uppercase;
+	height: 2.8em;
+	background: #555454 url('/inc/html/GFDL/pix/nav_gradient.gif') repeat-x;
+	text-align: left;
+}
+#nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0 10px;
+	border: 0;
+}
+#nav > li > a {
+	padding: 0 25px;
+}
+#nav li {
+	float: left;
+	border-left: 1px solid #C2C2C2;
+	border-right: 1px solid #242424;
+}
+#nav li ul {
+	border-bottom: 1px solid #333333;
+	border-top: 1px solid #787878;
+	position: absolute;
+	z-index: 100;
+	width: 150px;
+	left: -999em;
+	height: auto;
+	padding-left: 2px;
+	background: #555454;
+}
+#nav li li {
+	width: 99%;
+	background: #565656;
+	font: normal 12px/26px "Trebuchet MS", Arial, Helvetica, "URW Gothic L", sans-serif;
+	border: 0;
+}
+#nav li li a {
+	border-bottom: 1px solid #787878;
+}
+#nav li.sfhover ul, #nav li:hover ul {
+	left: auto;
+}
+#nav li.sfhover, #nav li:hover {
+	background: #676ab1; /* or 0099CC */
+}
+/* CONTENT */
+#outer_container {
+/*	background-color: #FFFFFF;
+	overflow: auto; */
+	background: #CCC url('/inc/html/GFDL/pix/content_background.gif') repeat-y 50% 0;
+}
+#content_container {
+	width: 960px;
+	padding: 10px 0 0 0;
+	margin: 0px auto;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+}
+#mural {
+	margin: 6px 0;
+}
+#mural img {
+	border: 1px solid #000;
+}
+#content {
+	width: 940px;
+	padding: 0 10px;
+/*	margin: 10px 0; */
+	overflow: auto;
+	font-size: 1.2em;
+}
+#content .allborder {
+	border: 1px solid;
+}
+#content p {
+	line-height: 1.6em;
+	margin-bottom: 1em;
+}
+#content ol, #content ul, #content dt{
+/*	list-style-position:inside; */
+	margin-left: 2em;
+	line-height: 1.6em;
+}
+#content dt code, #content dd code {
+	font-weight: normal;
+	color: #060;
+}
+#content ol, #content ul {
+	margin-bottom: 1em;
+}
+#content li {
+	margin-bottom: 2px;
+}
+#content ol ol, #content ul ul, #content ol ul, #content ul ol{
+	/* This prevents extra margins in nested lists (2 deep)*/
+	margin-bottom: 0;
+}
+#content dd {
+	margin-left: 5em;
+	margin-bottom: 1em;
+}
+#content form {
+	margin:5px 0;
+	border: 1px solid #EFEFEF; 
+	background-color: #FAFAFA;
+	padding: 5px 10px;
+}
+#content label {
+	display:block;
+	font-weight:bold;
+}
+#content input {
+	padding: 2px;
+	margin-bottom: 5px;
+	font: normal 1em "Trebuchet MS", Tahoma, sans-serif;
+	color:#444;
+}
+#content textarea {
+	color:#444;
+	padding: 2px;
+	margin-bottom: 5px;
+	border:1px solid #BBB;
+}
+#content input.button { 
+	margin: 0; 
+	padding: 2px 3px;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #333;	
+	border: 1px solid #BBB;
+	background: #FFF url(/inc/html/GFDL/pix/input_bg.gif) repeat-x;
+}
+#content input.allborder {
+	border:1px solid #BBB;
+}
+#content input.normargin {
+	margin:0;
+}
+#content img.left, #content div.left {
+	margin: 4px 10px 4px 0;
+	padding: 4px;
+	background: #EEE;
+	border: 1px solid #CCC;
+}
+#content img.right, #content div.right {
+	margin: 4px 0 4px 10px;
+	padding: 4px;
+	background: #EEE;
+	border: 1px solid #CCC;
+}
+/* FOOTER */
+#footer {
+	overflow: auto;
+	padding-top: 16px;
+	margin: 0 10px 2px 10px;
+	clear: both;
+	border-top: 4px solid #6d2312;
+	font: normal 1.1em/1.4em Tahoma, Verdana, Arial, sans-serif;
+}
+#footer_leftcol {
+	float: left;
+	width: 200px;
+}
+#footer_rightcol {
+	float: right;
+	width: 200px;
+	text-align: right;
+}
+#footer_centercol {
+	margin-left: 208px;
+	margin-right: 208px;
+	text-align: center;
+}
+address {
+	font-style: normal;
+}
+/* MISCELLANEOUS */
+.breadcrumb {
+	border: 1px dotted #999;
+	background: #EEE;
+	padding: 4px 6px;
+}
+.caption {
+	margin: 0 !important;
+	font-size: .9em;
+}
+.center {
+	text-align: center;
+} 
+.clear {
+	clear: both;
+}
+.frame {
+	/* this is just a way to put a border/background on images, divs, etc. that arent floated like #content img.left, #content div.left, etc. */
+	margin: 4px;
+	padding: 4px;
+	background: #EEE;
+	border: 1px solid #CCC;
+	/* display: table; */
+}
+.invalid {
+	color:#b00;
+	font-weight:bold;
+}
+.left {
+	float: left;
+}
+#mission {
+	background: #324291;
+	padding: 12px 16px;
+	color: #fff;
+	font-size: 1.1em;
+	margin-bottom: 4px !important;
+	line-height: 1.4em !important;
+}
+#mission a {
+	color: #fff;
+}
+.msword {
+	padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/word.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.news-links {
+	font-size: 0.9em;
+	margin-top: 30px;
+	text-align: center;
+	clear: both;
+}
+.noframeleft {
+	float: left;
+	background: none;
+	border: none;
+}
+.noframeright {
+	float: right;
+	background: none;
+	border: none;
+}
+.nowrap {
+	/* useful for table cells that you don't want wrapped */
+	white-space:nowrap;
+}
+.researchHeading {
+    color: #324291;
+    font-size: 2em;
+}
+.researchTopic {
+	height: 200px;
+	width: 468px;
+	float: left;
+	margin-bottom: 4px;
+	overflow: hidden;
+	position: relative;
+}
+.researchTopic img {
+	position: absolute;
+}
+.researchTopic p {
+	padding: 5px 4px;
+	line-height: 1.2em !important;
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.4);
+	z-index: 10; 
+	position: relative; 
+	color: rgb(255, 255, 255);
+	font-size: 1.7em; 
+	text-align: center; 
+	font-family: Arial, Helvetica, sans-serif; 
+	text-shadow: 0px 1px 1px rgb(51, 51, 51);
+}
+.researchTopic:hover p {
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.25);
+}
+#researchHighlights h3, #recentPublications h3, #ourResearchers {
+	color: #324291;
+	text-align: center;
+	margin: 12px 0px 8px 0;
+	font-size: 1.7em;
+}
+#ourResearchers {
+	clear:both;
+}
+#researchHighlights li, #recentPublications li {
+	margin-bottom: 14px;
+}
+#researchHighlights, #recentPublications {
+	float: left;
+	width: 50%;
+}
+.right {
+	float: right;
+}
+.skipnav {
+	position: absolute;
+	left: -999em;
+}
+.audio {
+	padding-right: 20px;
+	background-image:url('/inc/html/GFDL/pix/audio.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.email {
+	padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/email.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.external {
+	padding-right: 12px;
+	background-image:url('/inc/html/GFDL/pix/external.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.note, .warning {
+	border: 2px dotted #CC9;
+	background: #EED;
+	padding: 4px 8px;
+	margin: 5px 0px;
+}
+.pdf {
+	padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/pdf.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.rss {
+	padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/rss.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.topofpage {
+	float: right;
+	margin-right:1em;
+	font-size: 0.8em; 
+	padding-right: 10px;
+	background-image: url(/inc/html/GFDL/pix/top_of_page.gif); 
+	background-repeat: no-repeat; 
+	background-position: 100% 50%;
+}
+.video {
+	padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/video.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.verticalmiddle {
+	/* Mainly used on images to vertically align with text */
+	vertical-align: middle;
+}
+#sitetitle {
+	position: absolute;
+	left: -999em;
+}
+.highlighted {
+	font-weight: bold;
+	background-color: #feb;
+	padding: 2px;
+	padding-bottom: 0px;
+}
+
+/* REVIEW */
+#review h3 {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, "URW Gothic L", sans-serif;
+}
+#review_menu {
+	padding: 25px 10px 10px 20px;
+	margin-left: 10px;
+	float: right;
+	width: 300px;
+	height: 300px;
+	background-image: url(http://www.gfdl.noaa.gov/pix/model_development/land_model/sidebar_background.png);
+	background-repeat: no-repeat;
+}
+
+#review a:link {
+	border-bottom: 1px dotted #AAA;
+	color: #008;
+}
+#review a:visited {
+	border-bottom: 1px dotted #AAA;
+	color: #008;
+}
+#review a:hover {
+	border-bottom: 1px solid #008;
+	text-decoration: none;
+}
+.word {
+padding-right: 18px;
+	background-image:url('/inc/html/GFDL/pix/word.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.map {
+	background: url("/pix/about_us/map_icon.png") no-repeat scroll 0pt 50% transparent;
+	padding-left: 18px;
+}
+
+#ccvp-sidebar {
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+box-shadow: 0 2px 3px #ccc;
+}
+#ccvp-sidebar p {
+	margin: 0 0 4px 4px;
+}

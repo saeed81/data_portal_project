@@ -1,0 +1,79 @@
+*{
+margin: 0px;
+padding: 0px;
+}  
+a{
+text-decoration:none;
+}
+body{
+background-image:url(../images/station1.jpg);
+}
+.wrapper{
+width:1000px;
+height:550px;
+background-color: #0676b6;
+border-top:1px solid #e1e1e1;
+border-right:1px solid #e1e1e1;
+border-left:1px solid #e1e1e1;
+border-bottom:1px solid #e1e1e1;
+margin-top:10px;  
+margin-right:auto ;  
+margin-bottom:10px ;  
+margin-left:auto;  
+}
+.header{
+width:1000px;
+height:125px
+background: #90a090;
+background-repeat:no-repeat;
+}
+.navbar{
+width:1000px;
+height:75px;
+background: #90a090;
+background-repeat:repeat-x;
+}
+.button a {
+float :left;
+width : 100px;
+height:25px;
+line-height:22px;
+font-family:verdana;
+font-size:13px;
+color:#000;
+font-weight:bold;
+text-align:center;
+padding-right:32px;
+padding-left:32px;
+line-height:60px;
+display:block;
+
+}
+.button a:hover{
+float :left;
+width : 100px;
+height:25px;
+line-height:22px;
+font-family:verdana;
+font-size:13px;
+color:#fff;
+font-weight:bold;
+text-align:center;
+/*background-repeat:repeat-x;*/
+background-repeat:no-repeat;
+color:silver;
+background-color:black;
+}
+.mainbody{
+width:1000px;
+height:375px;
+font-family:verdana;
+font-size:11px;
+color:#515151;
+background:#e1e1e1;
+}
+.footer{
+width:1000px;
+height:25px;
+background-repeat:no-repeat;
+}

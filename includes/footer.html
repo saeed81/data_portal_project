@@ -1,0 +1,92 @@
+<div class="footer">
+<!--<address>
+  <strong>Department of Environmental Science and Analytical Chemistry</strong><br>
+  <span >Svante Arrhenius väg 8, SE-11418 Stockholm | Phone: +46 (0)8 674 70 00<br></span>
+</address>
+-->            
+<div id="leftfoot">
+  <address><strong>2015 Department of Environmental Science and Analytical Chemistry, Stockholm University</strong> <br/>Svante Arrhenius väg 8, SE-11418 Stockholm | Phone: +46 (0)8 674 70 00 </address>
+</div>
+
+<div id="rightfoot">
+<ul id="ulfoot">
+<li ><a href="/">home</a><div id="divider1"></div></li><li><a href="?page=data">data</a><div id="divider2"></div></li><li ><a href="?page=instruments">Science</a><div id="divider3"></div></li><li><a href="?page=analysis">E-TOOLS</a><div id="divider4"></div></li><li ><a href="?page=esticc">ESTICC</a><div id="divider5"></div></li><li ><a href="?page=about">about</a></li></ul>
+</div>
+
+
+
+<!--<b>&copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataportal at ITM</b></div>
+
+
+
+<div id="footer" class="container-fluid">
+  
+  <div class="footer-top"></div>
+  
+  
+  <div class="row">           
+            <div class="col-sm-6 footer-left">
+            
+            <address>
+                <strong>Department of Environmental Science and Analytical Chemistry</strong><br>
+                  <span class="hidden-xs">Svante Arrhenius väg 8, SE-11418 Stockholm | Phone: +46 (0)8 674 70 00<br></span>
+                  </address>
+            
+            </div>
+                      
+            <div class="col-sm-6 footer-right hidden-xs">
+               
+            </div>            
+            </div>
+  
+ 
+  </div>
+-->
+
+</div>
+</div>
+
+
+<!--<script>
+
+jQuery.noConflict();
+(function( $ ) {
+ $(document).ready(function () {
+
+    $("#dt1").datepicker({
+       defaultDate: '2005-01-01',
+        showButtonPanel: true,
+        dateFormat: "yy-mm-dd",
+        minDate: '2000-01-01',
+        closeAtTop:true,
+   
+        onSelect: function () {
+            var dt2 = $('#dt2');
+            var startDate = $(this).datepicker('getDate');
+            //add 30 days to selected date
+            startDate.setDate(startDate.getDate() + 366);
+            var minDate = $(this).datepicker('getDate');
+            //minDate of dt2 datepicker = dt1 selected day
+            dt2.datepicker('setDate', minDate);
+            //sets dt2 maxDate to the last day of 30 days window
+            dt2.datepicker('option', 'maxDate', startDate);
+            //first day which can be selected in dt2 is selected date in dt1
+            dt2.datepicker('option', 'minDate', minDate);
+            //same for dt1
+           
+        }
+    });
+    $('#dt2').datepicker({
+        dateFormat: "yy-mm-dd"
+    });
+});
+// Your jQuery code here, using the $
+})( jQuery );
+
+</script>
+-->
+
+<script language="javascript" src="js/navbar.js?<?php echo time(); ?>" type="text/javascript"></script>
+
+</body>
+</html>

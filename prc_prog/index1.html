@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+<span id="status"></span>
+<h1 id="finalMessage"></h1>
+<script>
+function progressBarSim(al) {
+  var bar = document.getElementById('progressBar');
+  var status = document.getElementById('status');
+  status.innerHTML = al+"%";
+  bar.value = al;
+  al++;
+var sim = setTimeout("progressBarSim("+al+")",100);
+if(al == 100){
+  status.innerHTML = "100%";
+  bar.value = 100;
+  clearTimeout(sim);
+  var finalMessage = document.getElementById('finalMessage');
+  finalMessage.innerHTML = "Process is complete";
+}
+}
+var amountLoaded = 0;
+progressBarSim(amountLoaded);
+</script>
+</body>
+</html>

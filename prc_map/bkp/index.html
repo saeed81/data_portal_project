@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Google Map</title>
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script>
+      //var coords={latitude:44.5403, longitude:-78.5463};
+      function showMap(){
+      //var map;
+      var googleLatAndLong = new google.maps.LatLng(44.5403, -78.5463);
+      var mapOptions = { 
+      zoom : 10, center : googleLatAndLong, mapTypeId: google.maps.MapTypeId.ROADMAP}
+      var mapDiv = document.getElementById('imap');
+      var map = new google.maps.Map(mapDiv,mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', showMap);
+      </script>
+ </head>
+   <body>
+     
+     <div id="imap"></div>
+  
+   </body>
+</html>
+
+
+
+
+

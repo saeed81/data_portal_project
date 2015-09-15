@@ -1,0 +1,4 @@
+CREATE TABLE `progress` (
+  `tm` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `stage` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -1,0 +1,615 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 10 October 2014 17:24:45
+*/
+
+
+p.insert{
+  width:200px;
+  float:left;
+  border-top:1px solid #242424;
+  margin:10px 15px 10px 0;
+}
+h2.home, .content-head .home {
+    display: none;
+}
+#wrapper .content-body h2.inside {
+    display: block;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.6em;
+}
+#wrapper .content-head .inside {
+    padding: 0px;
+    margin: 0px;
+}
+#top-banner {
+    background: #333;
+}
+#inner-wrapper {
+    background: url("http://www.utas.edu.au/__data/assets/image/0011/67781/imas-diver.jpg") no-repeat left bottom;
+}
+#content-wrapper {
+    background: url("http://www.utas.edu.au/__data/assets/image/0005/65525/left-footer-bg.gif") repeat-y left bottom;
+}
+#wrapper {
+    float: none;
+}
+#utas-logo a {
+    display: inline;
+    padding-left: 10px;
+}
+#home #utas-logo {
+    background: none;
+    width: 355px;
+    padding: 0;
+    left: 170px;
+}
+#utas-logo a {
+    display: inline;
+    padding-left: 0px;
+}
+#navigation-wrapper {
+    padding-top: 0;
+    margin-top: 5em;
+}
+#navigation {
+    padding-bottom: 11px;
+    background: #e7eaef;
+}
+#navigation ul li a.current {
+    background: #ffffff; /* sets background of selected menu item */
+}
+#quick-links ul {
+}
+#quick-links ul li {
+    background:url("http://www.utas.edu.au/__data/assets/image/0018/63810/imas-ql-arrow.gif") 3px 7px no-repeat;
+    color:#FFF;
+    display:block;
+    font-weight:bold;
+    padding:4px 0 4px 15px;
+}
+#quick-links {
+    background-color: #00606f;
+}
+#quick-links a {
+    color:#FFF;
+}
+#quick-links a:hover, #quick-links a:focus {
+    border-color: #fff;
+}
+/** Search **/
+.school-search {
+    background:url("http://www.utas.edu.au/__data/assets/image/0010/63757/search-gradient.gif") repeat-x;
+}
+.school-search .panel {
+    height: 43px;
+    background: transparent none;
+    margin-bottom: 0px;
+}
+#wrapper .school-search .panel label {
+    float: none;
+    padding: 0;
+    margin: 0px 0px 5px 0px;
+    text-align:left;
+    width: 225px;
+    color: #002536;
+    font-size: 1.2em;
+    line-height: 20px;
+    font-weight: bold;
+}
+#wrapper .school-search .panel input {
+    margin: 0;
+    padding-left:6px;
+    position: relative;
+    top: 4px;
+}
+#wrapper .school-search .panel input#queries_keyword_query {
+    margin: 2px 0;
+    top: 0;
+    width: 185px;
+}
+#wrapper .school-search .panel input.search-field {
+    background:url("http://www.utas.edu.au/__data/assets/image/0010/69382/search-mag-up.gif") no-repeat scroll left top #EEEEEE;
+    border:1px solid #b2c0c8;
+    height:14px;
+    padding-left:21px;
+}
+html>body #wrapper .school-search .panel input#queries_keyword_query {
+    width: 180px;
+}
+* html #wrapper .school-search .panel input#queries_keyword_query {
+    width: 180px;
+}
+/** Content **/
+.content-col-half {
+    width: 40%;
+    padding: 5px;
+}
+/** Inside  **/
+.inside {
+    padding: 7px;
+}
+.inside p {
+    padding: 7px;
+}
+.inside ul {
+    list-style:square outside none;
+    padding:10px 0 5px 20px;
+}
+.inside ul ul {
+    list-style:circle outside none;
+    padding:0 0 0 20px;
+}
+ul.link-list-inline {
+    padding: 0;
+}
+#wrapper .col-right h3 a {
+    border-bottom:none;
+}
+#wrapper .col-right h3 a:hover {
+    border-bottom:2px dotted #FFF;
+}
+#wrapper .col-right h3 {
+    background-color:#00606F;
+}
+#wrapper .col-right h3.donate {
+    background-color:#01a8a0;
+}
+#wrapper .col-right h3.gradient {
+    background: url("http://www.utas.edu.au/__data/assets/image/0004/65524/tab-gradient-bg.jpg");
+    color: #00606F;
+}
+#wrapper .col-right h3.gradient a:link,
+#wrapper .col-right h3.gradient a:visited {
+    color: #00606F;
+    border-bottom:none;
+}
+#wrapper .col-right h3.gradient a:hover {
+    border-bottom:2px dotted #00606F;
+}
+.publications .events-list-item {
+    border: none;
+}
+#wrapper .col-right h4 a:link, 
+#wrapper .col-right h4 a:visited {
+color: #5D7289;
+}
+#wrapper .col-right h4 a:hover{
+color: #000000;
+}
+.publications .events-list-item h4 {
+    padding: 5px 0;
+}
+.publications .events-list-item h3 {
+    border-bottom: 1px dotted #FFF;
+}
+.publications h4 {
+    font-weight:bold;
+    padding:3px 0 5px;
+    font-size:1em;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+}
+.publications ul.pub-list{
+ background:#ff3344;
+}
+.publication-item {
+    border-bottom:1px dotted #A4A4A4;
+    display: block;
+    margin:5px 0 6px 0;
+}
+.right-col .events-list-item h4 {
+    font-weight:bold;
+    padding:3px 0 5px;
+    font-size:1em;
+    font-weight:bold;
+}
+.events-list-item img {
+    margin-right: 6px;
+}
+
+#whats-new-item h4, #whats-new-item p {
+    margin-left: 87px;
+}
+.col-right h3 {
+    color:#FFFFFF;
+    display:block;
+    font-weight:bold;
+    padding:5px 0;
+    text-align:center;
+    text-decoration:none;
+}
+#wrapper ul#tabs-menu li.ui-state-default a {
+    color: #000000;
+    border-bottom: 0px dotted #000000;
+}
+#wrapper ul#tabs-menu li.ui-state-hover a {
+    color: #000000;
+    border-bottom: 2px dotted #000000;
+}
+#wrapper ul#tabs-menu li.ui-state-active a {
+    color: #ffffff;
+    border-bottom: 2px dotted #FFFFFF;
+}
+#wrapper ul#tabs-menu li.ui-state-hover {
+    border-bottom: 0px;
+}
+#wrapper ul#tabs-menu li.ui-state-default {
+    color: #000000;
+    background: #eceff0;
+}
+#wrapper ul#tabs-menu li.ui-state-active {
+    color: #ffffff;
+    background: #01a8a0;
+}
+#wrapper ul#tabs-menu li {
+    width:188px;
+    border-right: 2px solid #ffffff;
+}
+#wrapper ul#tabs-menu li#global-reach {
+    width:141px;
+    border-right: 0px solid #ffffff;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
+    min-height:13.3em;
+    min-height: 200px;
+}
+.right-col-list h2 {
+    background-color: #00606F;
+}
+/** Footer **/
+#footer {
+    background: transparent url(imas-government_partnership.jpg) no-repeat 166px 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 983px;
+}
+#footer p {
+    color: #FFF;
+    padding: 50px 260px 15px 285px;
+    line-height: 15px;
+}
+#footer-content {
+    background-color: #FFF;
+    padding:10px 15px;
+    margin: 0 auto;
+    width: 957px;
+}
+#footer-content a {
+}
+.gray {
+    background-color: #F4F5F6;
+}
+/* ie 6 */
+html>body #navigation ul li a.current {
+    /* width: 171px;  sets width to align with the page contents */
+}
+html>body #navigation ul ul li a.current {
+    width: 151px; /* margins could be better ? */
+}
+html>body #navigation ul ul ul li a.current {
+    width: 141px;
+}
+.content_frame {
+    margin-left:0px;
+}
+html>body .content_frame {
+    margin-left:0px;
+}
+ul#tabs-menu {
+    width: 570px;
+    margin-right: 0px;
+}
+.col-right {
+    margin-left:0;
+    margin-right: 0px;
+    width:239px;
+}
+input.button, #wrapper a.button, input.button:hover, #wrapper a.button:hover {
+    background:none repeat scroll 0 0 #eceff0;
+    border-color: #eceff0;
+    color: #00606F;
+    text-shadow:0 0px 0 #ffffff;
+}
+input.button:hover, #wrapper a.button:hover {
+    color: #000000;
+}
+/* images */
+.img-border {
+    padding: 1px;
+    border: 1px solid #eeeeee;
+}
+/* Tab area content */
+#tabs .ui-widget-content h3, #tabs .ui-widget-content p {
+    padding: 7px 0px;
+}
+/* aligning the type */
+#home h3, #home h4, #home h5 {
+    padding-left: 8px;
+}
+#tabs h3 {
+    padding-left: 0px;
+}
+/* homepage content */
+.home h3 {
+    font-size: 1.4em;
+}
+.home h4 {
+    font-size: 1.1em;
+    font-weight:bold;
+
+}
+#home .home h5 {
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+/* people */
+#people {
+  list-style:square outside;
+}
+#people li{
+  margin:0 0 0 7px;
+}
+.people ul, .people ul li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.people ul li {
+    border-bottom: 1px dotted #f3f3f3;
+    padding: 4px;
+    margin: 2px;
+}
+.people ul li li {
+    border-width: 0px;
+    padding: 2px 4px;
+    border-bottom: 0px;
+}
+.people h4 {
+    padding: 4px 0px;
+    border-bottom: 1px dotted #dddddd;
+    font-weight: bold;
+}
+.people h5 {
+    padding: 4px 0px;
+}
+p.intro {
+    font-size: 1.2em;
+}
+.news-list {
+    border-bottom: 1px dotted #A4A4A4;
+    clear: left;
+    margin: 1px 6px 9px;
+    padding: 8px 12px;
+}
+#wrapper .content-body .news-list h3 {
+padding: 0px 4px;
+margin: 0px;
+font-size: 1.2em;
+}
+#wrapper .content-body .news-list h3,
+#wrapper .content-body .news-list h3 a {
+color: #5D7289;
+}
+#wrapper .content-body .news-list h3 a:hover {
+color: #000000;
+}
+#wrapper .content-body .news-list img {
+float: left;
+}
+.newsPub {
+    clear: both;
+    font-size: 90%;
+    text-align: right;
+}
+
+/* Publication search filtering styles */
+
+.publications li{
+  padding:10px 0 0px  0;
+  list-style:none;
+}
+.publications{
+background:#fcb345;
+}
+
+/* Styles for images */
+.padding{
+  margin:10px 12px 6px 8px ;
+  padding:2px 2px;
+  border:solid 1px #A9BAC6;
+}
+.left-padding{
+  float:left;
+  margin:10px 12px 8px 8px ;
+  padding:2px 2px;
+  border:solid 1px #A9BAC6;
+}
+.right-padding{
+  float:right;
+  margin:10px 8px 8px 12px ;
+  padding:2px 2px;
+  border:solid 1px #A9BAC6;
+}
+.imagepadding-alignleft {
+  border:1px solid #D3D3D3 !important;
+  margin-bottom:5px;
+  margin-right:10px;
+  margin-top:5px;
+  padding:5px;
+  float:left;
+}
+
+/** Research areas buttons modified by Maria Moore April 2012 **/
+ ul.grid-buttons-prog, .grid-buttons-prog, .grid-buttons-prog li {
+      padding: 0px;
+      margin: 0px;
+      list-style-type:none;
+      float: left;
+  }
+  .grid-buttons-prog li a img {
+      padding: 0px 8px;
+      float: left;
+      margin-top: 0px;
+  }
+  .grid-buttons-prog li a {
+    background-image: url("http://www.utas.edu.au/__data/assets/image/0013/241150/grbg-gr-blue.png") repeat-x;
+    border-bottom: 1px solid #FFFFFF;
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    padding: 16px 0 15px;
+    text-decoration: none;
+    width: 270px;
+}
+html>body .grid-buttons-prog li a {
+  width: 274px;
+  }
+  .grid-buttons-prog li a:hover {
+      background: #f1f1f1;
+      color: #b90000;
+      border-color: #cccccc;
+  }
+.icon-prog {
+    background-image: url("http://www.utas.edu.au/__data/assets/image/0013/241150/grbg-gr-blue.png");
+    position: relative;
+    height: 49px;
+    background-repeat: repeat-x;
+}
+.icon-prog:hover {
+    background-image: url("http://www.utas.edu.au/__data/assets/image/0018/155070/grbg-grey.png");
+    background-repeat: repeat-x;
+}
+
+/* Supporters Block */
+
+.supporters-block{
+  display: inline;
+  float: left;
+  font-size: 11px;
+  width: 150px;
+}
+
+.supporters-block img{
+  float: left;
+  padding: 0 10px 20px 5px;
+}
+
+.content-body .supporters-block a[href^="http:"] {
+  background: none;
+  display: block;
+  padding: 0;
+}
+
+/* END Supporters Block */
+
+/* Video Block */
+
+.video-block .more-link{
+  text-align: right;
+}
+
+/* END Video Block */
+
+/* Video Carousel */
+
+.carousel-video-details{
+  background: #F9F9F9;
+  border: 1px solid #DDD;
+  float: right;
+  height: 258px;
+  padding: 20px;
+  width: 310px;
+}
+
+.carousel-video-title{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.carousel-video-summary{
+  margin: 20px 0;
+}
+
+.carousel-video-duration{
+  text-align: right;
+}
+
+#carousel_controls a{
+  background: url("http://www.utas.edu.au/__data/assets/image/0004/290659/button-gradient.png") repeat-x top left;
+  border: 1px solid #ddd;
+  display: block;
+  float: left;
+  margin: 5px 0;
+  padding: 5px;
+  width: 786px;
+}
+
+#wrapper .content-body #carousel_controls a{
+  text-decoration: none;
+}
+
+#carousel_controls a:hover{
+  background: #E9E9E9;
+}
+
+#carousel_controls a.selected{
+  background: #D4DDE3;
+}
+
+#carousel_controls a img{
+  background: #FFF;
+  border: 1px solid #bbb;
+  float: left;
+  padding: 2px;
+  margin: 0 10px 0 0;
+}
+
+#carousel_controls a .control-title{
+  color: #5D7289;
+  display: block;
+  padding: 0 0 3px;
+}
+#carousel_controls a .control-summary{
+  color: #666;
+  display: block;
+  font-size: 0.8em;
+}
+
+/* END Video Carousel */
+
+#home #wrapper .content-body .button{
+  margin: 5px 0;
+}
+
+/** Tooltips **/
+
+.glossarylink{ color: #5270AF; }
+
+/** Image Key **/
+
+.image-key-wrapper table td{ width: 25%; border: none; padding: 0 0 10px 0; text-align: center; }
+.image-key-wrapper table td a{ }
+
+.no-carousel .carousel-image{ border: 1px solid #cccccc; padding: 2px 2px 2px 2px; }
+.no-carousel .carousel-description{ padding: 5px 5px 5px 5px; }
+
+#image-key-carousel li{ height: auto !important; }
+
+#image-key-carousel .carousel-image{ border: 1px solid #cccccc; padding: 2px 2px 2px 2px; }
+#image-key-carousel .carousel-image-wrapper{ display: table-cell; width: 200px; height: 367px; background: none repeat scroll 0 0 #eeeeee; vertical-align: middle; text-align: center; }
+#image-key-carousel .carousel-description{ padding: 5px 5px 5px 5px; }
+
+#image-key-carousel #carousel_controls a{ float: left; margin: 0 5px 5px 0; border: 1px solid #cccccc; padding: 2px 2px 2px 2px; width: auto;}
+#image-key-carousel #carousel_controls .button-wrapper{ display: table-cell; width: 75px; height: 138px; background: none repeat scroll 0 0 #eeeeee; vertical-align: middle; text-align: center; }
+#image-key-carousel #carousel_controls a img{ float: none; margin: 0; border: 0; padding: 0; background: none; }

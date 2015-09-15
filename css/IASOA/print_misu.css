@@ -1,0 +1,139 @@
+/* CSS Document - print.css */
+/* This stylesheet contains print styles */
+/*
+================= Element specific CSS =================
+TABLE OF CONTENTS
+	1. GENEREAL LAYOUT
+	2. PAGE LAYOUT
+	3. MISC 
+/* ****************************************************** */
+
+/* ********************** 1. GENEREAL LAYOUT ************ */
+html, body, form {
+	min-height: auto;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+/*---------------------- Containers -----------------------------------*/
+#container {
+	width: 660px;
+	background-image: none;
+	margin-left: 0;
+	margin-right: auto;
+	position: inherit;
+	min-height: auto;
+	height: auto;
+}
+html>body #container {
+    min-height: auto;
+	height: auto;
+}
+#content {
+	width: 660px;
+	background-image: none;
+	background-color: #ffffff;
+	min-height: auto;
+	height: auto;
+}
+div { position: inherit; }
+/*---------------------- Top and head ---------------------------------*/
+.top-links { display: none; }
+#head { display: none; }
+
+/*---------------------- Footer ---------------------------------------*/
+.footer {
+	width: 660px;
+	min-height: auto;
+	height: auto;
+	border-top: solid 1px #000000;
+	background-color: #ffffff;
+	color: #000000;
+	position: inherit;
+}
+.footer img { display: none; }
+.footer-left { padding-left: 0; }
+.footer-right { display: none; }
+.footer-bottom {}
+.footer a:link, .footer a:active, .footer a:visited, .footer a:hover { 
+	text-decoration: none;
+	color: #000000;
+}
+/* ********************* /1. GENEREAL LAYOUT ************ */
+
+/* ********************** 2. PAGE LAYOUT **************** */
+.columns { width: 660px; }
+.column { overflow: hidden; }
+
+/* --- Fixed columns */
+.left-column { display: none; }
+.main-column { float: none; width: 660px; }
+
+/* - Columns */
+.main-columns {
+	min-height: auto;
+	height: auto;
+	padding-right: 0;
+	background-image: none;
+	width: 660px;
+}
+.main-columns-left {
+	min-height: auto;
+	height: auto;
+	width: 660px;
+	padding: 0;
+	background-image: none;
+}
+.fullsize .main-columns-left { width: 660px; }
+.main-columns-right {
+	min-height: auto;
+	height: auto;
+	margin-right: 0;
+	width: 164px;
+	padding: 0;
+	background-image: none;
+	display: none;
+}
+
+/* --- Columns */
+.wrapper .top-columns { background-image: none; }
+.wrapper .top-columns-right { display: none; }
+/* - Column backgrounds */
+.top-static , .background-25-25-25-25, .background-25-50-25, .background-50-25-25 {
+	background-image: none;
+}
+/* --- Start pages */
+.start-columns-row .col-25 { width: 25%; overflow: hidden; }
+.start-columns-row .col-50 { width: 50%; overflow: hidden; }
+/* ********************* /2. PAGE LAYOUT **************** */
+
+/* ********************** 3. MISC *********************** */
+ol.path, .path a:link, .path a:active, .path a:visited, .path a:hover { color: #000000; }
+
+.main-columns-left .content-block.promotion { background-color: #ffffff; }
+
+/*---------------------- Lists ----------------------------------------*/
+ul.list-arrow-1 a:link, ul.list-arrow-1 a:active, ul.list-arrow-1 a:visited, ul.list-arrow-1 a:hover,
+ul.list-arrow-2 a:link, ul.list-arrow-2 a:active, ul.list-arrow-2 a:visited, ul.list-arrow-2 a:hover { 
+	text-decoration: none;
+	color: #000000; 
+}
+
+/*---------------------- Links ----------------------------------------*/
+a:link, a:active, a:visited, a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*---------------------- Headings -------------------------------------*/
+h1, h2, h3, h4 { color: #000000; }
+
+/*---------------------- Paragraphs -----------------------------------*/
+.main-article p {
+	min-width: auto;
+	max-width: 660px;
+}
+
+/*---------------------- Icons and functions --------------------------*/
+a.icon-print, a.icon-feed { display: none; }
+.article-tools, .content-block-link { display: none; }
+/* ********************* /3. MISC *********************** */

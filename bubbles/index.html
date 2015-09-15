@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<title> bubbles </title>
+ <meta  charset="UTF-8">
+
+
+</head>
+
+<body>
+
+<!--
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+-->
+
+<canvas width="800" height="800"></canvs> 
+ 
+<script>
+
+var f= function (){
+ 
+var canvas = document.getElementsByTagName('canvas')[0];
+
+var c = canvas.getContext('2d');
+
+c.beginPath();
+c.moveTo(100,100);
+
+c.lineTo(400,400);
+
+c.stroke();
+
+};
+
+window.addEventListener('load',f,false);
+
+</script>
+
+
+
+</body>
+
+</html>

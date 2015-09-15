@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+*{
+margin: 0px;
+padding: 0px;
+}  
+
+
+a{
+text-decoration:none;
+}
+
+body{
+/*background-image:url(../images/station1.jpg);*/
+background-image:url(../images/station9.jpg);
+background-color:#66CCFF;
+background-color:#A52A2A;
+background-color:#F33131;
+background-color:#8B3232;
+background-color:#666666;
+background-color:#000000;
+background-color:#ABCABC;
+padding:0px;
+/*background-color:#ffffff;*/
+background-color: rgb(201,222,150); /* Old browsers */
+background-color: -moz-linear-gradient(top,  rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6+ */
+background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57\,130,53,1))); /* Chrome,Safari4+ */
+background-color: -webkit-linear-gradient(top,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(../images/station2.jpg);
+/*background-color:#EEEEEE;*/
+background-repeat:no-repeat;
+background-origin: content-box;
+background-attachment: fixed;
+background-size:contain;
+background-size:2000px 1200px;
+background-attachment: local;
+background-size:cover;
+background-size:100% 100%;
+font-family:Palatino,'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+font-kerning: normal;
+font-size: 76%; /* as recommended in CSS guide */
+color:#111111;
+line-height:1.6;
+padding-top:30px;
+overflow-y:scroll;
+/*background-position: right top;*/
+}
+
+hr {
+    border: 0 #cccccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+.wrapper{
+width:960px;
+width:90%;
+height:900px;
+background-color: #0676b6;
+background-color: SkyBlue;
+border-top:0px solid #e1e1e1;
+border-right:0px solid #e1e1e1;
+border-left:0px solid #e1e1e1;
+border-bottom:0px solid Lime;
+border-top:0px solid Lime;
+border-right:0px solid Lime;
+border-left:0px solid Lime;
+border-bottom:0px solid Lime;
+padding-left:0px;
+padding-left:0px;
+margin-top:0px;  
+margin-right:auto ;  
+margin-bottom:0px ;  
+margin-left:auto;
+padding-top:0px;
+overflow:hidden;
+/*font-size-adjust:0.58;*/
+/*position:realtive;*/
+/*top : 0px;*/
+/*left:0px;*/ 
+}
+.header{
+width:960px;
+height:125px;
+/*background: #90a090;*/
+background-image:url(http://freewebpageheaders.com/downloads/blue-abstract-waves-lrg.jpg);
+background-image:url(../images/buttonbg.gif );
+background-repeat:no-repeat;
+background-color: red;
+background-color: #ff3300;
+/*display: block;*/
+text-align:center;
+overflow: hidden;
+background-size:cover;
+}
+.header h1{
+line-height:122px;
+font-family:Georgia,"URW Gothic L","Trebuchet MS",Palatino,sans-serif,Tahoma,Droid sans,Georgia,Lucida;
+font-size:40px;
+color:#000000;
+color:#FF5300;
+color:#FF3300;
+font-weight:bold;
+text-align:center;
+margin:0px 0px 0px 0px; 
+/*display: block;*/
+/*font-kerning: small;*/
+/*font-size-adjust:0.58;*/
+/*font-stretch: condensed;*/
+text-shadow: 2px 2px 1px #ff0000;
+letter-spacing: 3px;
+/*font-style: oblique;*/
+}
+.navbar{
+width:960px;
+height:50px;
+margin-top:0px;
+margin-right:0px;
+margin-bottom:0px;
+margin-left:0px;
+background: #90a090;
+background: #0000ff;
+/*background-image:url(../images/topbg.gif );*/
+/*background-repeat:repeat-x;*/
+background-color:#111111;
+text-align:left;
+}
+
+ul#navmenu, ul.sub1{ 
+list-style-type:none;
+}
+
+ul#navmenu li{ 
+float:left;
+width:125px;
+height:50px;
+line-height:47px;
+position:relative;
+padding:0px;
+margin :0px
+margin-right:10px;
+text-align:center; 
+float:left;
+background-color:#CF6565;
+background-color:#5252A1;
+border:0px solid #CCCCCC;
+border-radius:0px;
+}
+
+ul#navmenu a{
+float:left  !important;
+width:150px;
+height:50px;
+line-height:47px;
+font-family:Lucida,Georgia;
+font-size:22px;
+color:#ffffff;
+font-weight:bold;
+border-left:0px solid #222222;
+border-right:0px solid #222222; 
+border:0px solid #CCCCCC; 
+border-radius:0px;
+text-align:center;
+margin-right:0px;
+display:block;
+}
+ul#navmenu a:hover{
+float:left  !important;
+width:150px;
+height:50px;
+line-height:47px;
+font-family:Lucida,Georgia;
+font-size:22px;
+color:darkblue;
+font-weight:bold;
+border-left:0px solid #222222;
+border-right:0px solid #222222; 
+border-radius:0px;
+text-align:center;
+margin-right:0px;
+margin-right:0px;
+display:block;
+}
+ul#navmenu .sub1 li {
+border:0px solid red;
+background-color:#111111;
+}
+
+ul#navmenu .sub1 a{
+display:block;
+color:green;
+text-align:center;
+}
+
+ul#navmenu li:hover > a{
+background-color:#CFC;
+}
+
+ul#navmenu li:hover  a:hover{
+background-color:#FF0;
+}
+ul#navmenu ul.sub1 {
+display:none;
+position:absolute;
+top:50px;
+left:0px;
+}
+ul#navmenu li:hover ul.sub1 {
+display:block;
+}
+
+
+.mainbody{
+width:960px;
+height:650px;
+font-family:Georgia,serif;
+font-size:19px;
+color:#515151;
+color:#111;
+background-color:#e1e1e1;
+background-color:#9999ff;
+background-color:#00FF99;
+background-color:white;
+}
+.footer{
+width:960px;
+height:25px;
+font-size:20px;
+font-type:verdana;
+background-repeat:no-repeat;
+clear:both;
+text-align:center;
+margin-top:2%;
+line-height:47px;
+}

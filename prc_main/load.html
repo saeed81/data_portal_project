@@ -1,0 +1,40 @@
+$progress = document.querySelector('#progress');
+
+var url = 'https://placekitten.com/g/2000/2000';
+
+var request = new XMLHttpRequest();
+request.onprogress = onProgress;
+request.onload = onComplete;
+request.onerror = onError;
+
+function onProgress(event) {
+  if (!event.lengthComputable) {
+    return;
+  }
+  var loaded = event.loaded;
+  var total = event.total;
+  var progress = (loaded / total).toFixed(2);
+
+  $progress.textContent = 'Loading... ' + parseInt(progress * 100) + ' %';
+
+  console.log(progress);
+}
+
+function onComplete(event) {
+  var $img = document.createElement('img');
+  $img.setAttribute('src', url);
+  $progress.appendChild($img);
+  console.log('complete', url);
+}
+
+function onError(event) {
+  console.log('error');
+}
+
+
+$progress.addEventListener('click', function() {
+  request.open('GET', url, true);
+  request.overrideMimeType('text/plain; charset=x-user-defined');
+  request.send(null);
+});
+<div id="progress">Click me to load</div>

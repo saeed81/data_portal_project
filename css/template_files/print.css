@@ -1,0 +1,44 @@
+body {
+	/* font-family: sans-serif,"Times New Roman", Times, serif; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+#header_container, #nav_container, .skipnav, #footer_rightcol, #footer_centercol {
+	display: none;
+}
+
+#sitetitle {
+	color: #E5E5E5;
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #e5e5e5;
+}
+/*
+#content a:link:after, #content a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 90%;
+}
+
+#content a.ignore:after{
+	content: "";
+	font-size: 90%;
+}
+*/
+h2, h3 {
+	text-indent:0px !important;
+}
+#footer {
+	border-top: 2px solid #000;
+	padding-top: 10px;
+	clear:both;
+}
+#sidebar, #sidebar_middle {
+	float:none !important;
+	width: 100% !important;
+}
+#sidebar dt a {
+	font-size: 12pt !important;
+}

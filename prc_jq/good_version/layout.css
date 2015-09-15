@@ -1,0 +1,116 @@
+*{
+margin :0px;
+padding :0px;
+}
+
+a img{
+border:none;
+}
+
+.gallery-wrapper
+{
+width:480px;
+height:360px;
+margin:50px auto 0 auto;
+border: 3px solid #fff;
+position:relative;
+}  
+.gallery-mask
+{
+width:480px;
+height:360px;
+overflow:hidden;
+}  
+.leftbtn{
+width:75px;
+height:360px;
+position:absolute;
+top:0px;
+left:0px;
+background:#666;
+display:none;
+opacity:0.2;
+}
+.rightbtn{
+width:75px;
+height:360px;
+position:absolute;
+top:0px;
+right:0px;
+background:#666;
+display:none;
+opacity:0.2;
+}
+.rightbtn-inner{
+width:35px;
+height:80px;
+margin:140px auto 0 auto;
+background:#ff0000;
+/*background-image:url("right_arrow.png");*/
+background-repeat:no-repeat;
+background-position:0px 0;
+opacity:0.5; 
+/*background-size:contain;*/
+/*background-size:50px 50px;*/
+/*background-attachment: local;*/
+/*background-size:cover;*/
+/*background-size:100% 100%;*/  
+}
+.leftbtn-inner{
+/*background-image:url("left_arrow.png");*/
+background-repeat:no-repeat;
+width:35px;
+height:80px;
+margin:140px auto 0 auto;
+background:#fff000;
+background-position:-35px 0; 
+}
+.gallery-wrapper:hover .rightbtn{
+display:block;
+}
+.gallery-wrapper:hover .leftbtn{
+display:block;
+}
+
+.leftbtn-inner:hover
+{
+background-position:-35px 0; 
+}
+.rightbtn-inner:hover
+{
+background-position:0px 0;
+opacity:0.5; 
+}
+
+.leftbtn:hover,.rightbtn:hover
+{
+opacity:0.5;
+}
+
+.gallery-ul{
+list-style-type:none;
+height:360px;
+width:auto;
+}
+
+.gallery-li
+{
+float:left;
+height:360px;
+width:480px;
+}
+
+.gallery-imag
+{
+height:360px;
+width:480px;
+}
+.gallery-wrapper:hover .rightbtn
+{
+display:block;
+}
+.gallery-wrapper:hover .leftbtn
+{
+display:block;
+}
+

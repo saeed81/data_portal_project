@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+    <body>
+        <span id="output"></span>
+
+        <!-- jQuery...makes AJAX easier! -->
+        <script src="//code.jquery.com/jquery.js"></script>
+
+        <script>
+        window.pollingPeriod = 100;
+        window.progressInterval;
+
+        $.getJSON('longProcess.php', function(data){
+            clearInterval(window.progressInterval);
+            $('#output').html('Woohoo, all done! Message from server: ' + data.message);
+        }).error(function(data){
+            clearInterval(window.progressInterval);
+            $('#output').html('Uh , something went wrong');
+        });
+
+        window.progressInterval = setInterval(updateProgress, window.pollingPeriod);
+
+        function updateProgress(){
+            $.getJSON('progress.json',function(data){
+                $('#output').html(data.percentComplete*100 + ' complete');
+            }).error(function(data){
+                clearInterval(window.progressInterval);
+                $('#output').html('Uh oh, something went wrong');
+            });
+        }
+
+        </script>
+    </body>
+</html>

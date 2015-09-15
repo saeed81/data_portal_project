@@ -1,0 +1,803 @@
+<?php
+header("Cache-Control: no-cache, must-revalidate");
+$offset = 60 * 60 * 24 * 1;
+$ExpStr = "Expires: " . gmdate("D, d M Y H:i:s", time() + $offset) . " GMT";
+header($ExpStr);
+header("Pragma: no-cache");
+?>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta  charset="UTF-8">
+    <title>Data Portal</title>
+    <!--<meta name="generator" content="ITM">-->
+    <meta name="author" content="saeed falahat, Peter Tunved">
+    <meta name="date" content="">
+    <meta name="copyright" content="">
+    <meta name="keywords" content="data_portal, aerosol, esticc">
+    <meta name="description" content="Data_portal_in_ITM">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">-->
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="expires" content="0">
+    <!--<meta http-equiv="refresh" content="1; URL=http://localhost/">-->
+    <meta name="geo.position" content="59.363268, 18.058637" />
+    <meta name="geo.placename" content="Stockholm" />
+    <meta name="geo.region" content="SE-AB" />
+
+    <!--<link href="css/layout_data_portal.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />-->
+    <!--<link href="css/layout_data_portal.css?<?php echo sha1_file('css/layout_data_portal_responsive.css'); ?>" rel="stylesheet" type="text/css" />-->
+<!--    <link href="css/minif_css.php?<?php echo sha1_file('css/minif_css.php'); ?>" rel="stylesheet" type="text/css" /> -->
+
+<!--    <link type="text/css" rel="stylesheet" href="http://localhost/Data_portal//?b=styles&f=main.css,formelements.css,links.css,popups.css">-->
+<!--<link type="text/css" rel="stylesheet" href="css/layout_data_portal_responsive.css?<?php echo time(); ?>">-->
+
+<!-- jqueryui -->
+
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!--   jquery ui -->
+
+<!--jquery imageslider -->
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/imageslider.js?<?php echo time(); ?>"></script>
+
+<!--jquery imageslider -->
+
+
+<!-- dialog box -->
+
+<script src="js/alert.js?<?php echo time(); ?>"></script>
+
+<!-- dialog box    -->
+
+
+
+<link rel="stylesheet" href="js_ext/jquery-ui.css">
+<!--<link type="text/css" rel="stylesheet" href="css/layout_data_portal_responsive.css?<?php echo time(); ?>">-->
+<link type="text/css" rel="stylesheet" href="css/layout_data_portal_responsive.css?<?php $str = 'Gffriend';echo sha1($str);?>">
+
+<!--<link type="text/css" rel="stylesheet" href="css/imageslider.css?<?php echo time(); ?>">-->
+<link type="text/css" rel="stylesheet" href="css/imageslider.css?<?php echo md5(uniqid(rand(),true)); ?>">
+<link type="text/css" rel="stylesheet" href="css/alert.css?<?php echo md5(uniqid(rand(),true)); ?>">
+<link type="text/css" rel="stylesheet" href="css/contactform.css?<?php echo md5(uniqid(rand(),true)); ?>">
+<link type="text/css" rel="stylesheet" href="css/rangeslider.css?<?php echo md5(uniqid(rand(),true)); ?>">
+<link type="text/css" rel="stylesheet" media="only screen and (min-width:801px)" href="css/layout_data_portal_responsive.css?<?php $str = 'Gffriend';echo sha1($str);?>">
+<link type="text/css" rel="stylesheet" media="only screen and (max-width:800px)" href="css/layout_data_portal_media1.css?<?php echo time(); ?>">
+
+<!-- this is for responsive 
+<link type="text/css" rel="stylesheet" media="only screen and (min-width:768px) and (max-width:980px)" href="css/layout_768.css?<?php echo time(); ?>">
+<link type="text/css" rel="stylesheet" media="only screen and (min-width:600px) and (max-width:767px)" href="css/layout_600.css?<?php echo time(); ?>">
+<link type="text/css" rel="stylesheet" media="only screen and (min-width:300px) and (max-width:599px)" href="css/layout_599.css?<?php echo time(); ?>">
+-->
+
+
+<!-- google web font -->
+ <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+ <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
+<!--  google web font        -->
+
+
+
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+<!--<script src="js_ext/prototype3.js" type="text/javascript"></script>-->
+<script src="js_ext/jquery-1.9.1.js"></script>
+<script src="js_ext/jquery-ui.js"></script>
+
+
+<!--      the following three lines are for the date picker -->
+ <link   href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!--      the above three lines are for the date picker -->
+
+<!--      the following three lines are for the date picker with the gray background use in the analysis.html-->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<!--      the above three lines are for the date picker -->
+
+<!-- google icons used for image slider greater and smaller than signes for the home page-->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+i.tiny {font-size: 1em;}
+i.small {font-size: 2em;}
+i.medium {font-size: 4em;}
+i.large {font-size: 6em; color: red;}
+</style>
+
+<!-- google icons -->
+
+<script>
+var nnclick = 0;
+
+function showNavbar()
+{
+if ( nnclick == 1 ) 
+{
+var navbar = document.getElementById("navmenu");
+navbar.style.display = "none";
+navbar.style.cursor = "pointer";
+nnclick = 0;
+return true;
+}
+if ( nnclick == 0 ) 
+{
+var navbar = document.getElementById("navmenu");
+nnclick = nnclick + 1;
+navbar.style.display = "block";
+navbar.style.cursor = "pointer";
+return true;
+}
+
+}
+</script>
+
+
+
+
+<!-- <script>
+   $(function() {
+   $( "#datepicker-1" ).datepicker();
+   });
+ </script>
+-->  
+
+<!--<script type="text/javascript">
+window.timeoutID = window.setTimeout(function() { refreshTimer() }, 600000);
+var refreshTimer = function() {
+location.reload();
+}
+</script>
+-->
+<!--<script type="text/javascript">
+function showmap(){
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+}
+</script>
+-->
+<!--<link type="text/css" rel="stylesheet" href="css/layout_data_portal_print.css" media="print">-->
+<!--  <script src="js_ext/jquery.min.js"></script>
+  <script src="js_ext/d3.min.js"></script>
+  <script src="js_ext/d3-transform.js"></script>
+  <script src="js_ext/extarray.js"></script>
+  <script src="js_ext/misc.js"></script>
+  <script src="js_ext/micro-observer.js"></script>
+  <script src="js_ext/microplugin.js"></script>
+  <!--<script src="js_ext/bubble-chart.js"></script>-->
+<!--  <script src="js_ext/central-click.js"></script>
+  <script src="js_ext/lines.js"></script>
+  <script src="js_ext/index.js"></script>
+-->
+<!--  <style>
+    .bubbleChart {
+      min-width: 100px;
+      max-width: 500px;
+      height: 400px;
+      margin: 0 auto;
+    }
+    .bubbleChart svg{
+      background-color: #FFFFFF;
+    }
+  </style>
+-->
+
+
+<script language="javascript" src="js/myfun.js?<?php echo time(); ?>" type="text/javascript"></script>
+<script language="javascript" src="js/ajmatlab.js?<?php echo time(); ?>" type="text/javascript"></script>
+<!--<script language="javascript" src="js/navbar.js?<?php echo time(); ?>" type="text/javascript"></script>-->
+<script language="javascript" src="analysis/ajaxmain.js?<?php echo time(); ?>" type="text/javascript"></script>
+<script language="javascript" src="js/rangeslider.js?<?php echo time(); ?>" type="text/javascript"></script>
+
+<!--function resizew()
+{
+var c = document.getElementById('q');
+c.style.width="200px";
+return true;
+}
+
+function resetw()
+{
+var c = document.getElementById('q');
+c.style.width="100px";
+return true;
+}
+-->
+
+<!--
+    <script>
+      var jq = $.noConflict();
+         jq(document).ready(function() {
+            jq( "#datepicker1" ).datepicker({dateFormat:"yy-mm-dd"});
+         });
+      </script>
+
+    <script>
+      var jq = $.noConflict();
+         jq(document).ready(function() {
+            jq( "#datepicker2" ).datepicker({dateFormat:"yy-mm-dd"});
+         });
+      </script>
+
+-->
+    <script>
+var jq = $.noConflict();
+      
+jq(document).ready(function(){
+    jq("#datepicker1").datepicker({
+                changeMonth:true,
+                changeYear:true,
+                yearRange:"-100:+0",
+                dateFormat:"yy-mm-dd"});
+        jq("#datepicker2").datepicker({
+                   changeMonth:true,
+                    changeYear:true,
+                    yearRange:"-100:+0",
+                    dateFormat:"yy-mm-dd",
+                    });
+});
+    </script>
+
+
+
+
+
+
+
+      <!-- Javascript -->
+      <script>
+         var jq = $.noConflict();
+        jq(document).ready(function() {
+            var availableTutorials = [
+        "EBAS",
+        "ITMAD",
+               "ESTICC",
+               "Aerocom",
+               "ECDS",
+                "saeed falahat", "peter tunved", "zeppelin",
+            ];
+            jq( "#q" ).autocomplete({
+               source: availableTutorials
+            });
+         });
+      </script>
+
+<!--      <script>
+
+$(function() {
+ {
+    $("#dt1").datepicker({
+       defaultDate: '2005-01-01',
+        showButtonPanel: true,
+        dateFormat: "yy-mm-dd",
+        minDate: '2000-01-01',
+        closeAtTop:true,
+
+        onSelect: function () {
+            var dt2 = $('#dt2');
+            var startDate = $(this).datepicker('getDate');
+            //add 30 days to selected date
+            startDate.setDate(startDate.getDate() + 366);
+            var minDate = $(this).datepicker('getDate');
+            //minDate of dt2 datepicker = dt1 selected day
+            dt2.datepicker('setDate', minDate);
+            //sets dt2 maxDate to the last day of 30 days window
+            dt2.datepicker('option', 'maxDate', startDate);
+            //first day which can be selected in dt2 is selected date in dt1
+            dt2.datepicker('option', 'minDate', minDate);
+            //same for dt1
+
+        }
+    });
+    $('#dt2').datepicker({
+        dateFormat: "yy-mm-dd"
+    });
+
+
+
+</script>
+ -->
+<!-- bubble -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+  <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+  <script src="js/index.js"></script>
+  <style>
+    .bubbleChart {
+      min-width: 100px;
+      max-width: 700px;
+      height: 700px;
+      margin: 0 auto;
+    }
+    .bubbleChart svg{
+      background-color: #FFFFFF;
+    }
+  </style>
+<!-- bubble -->
+
+
+<!--   style  analysis.html soon will be moved to a seperate file -->
+<style>
+
+#iddate {
+border:2px solid gray;
+border-radius:10px;
+width: 30%;
+width: 365px;
+height: 300px;
+margin-top:10px;
+margin-left:100px;
+margin-right:auto;
+position:relative;
+/*position:absolute;*/
+top:0px;
+left:0px;
+background-color:GhostWhite;
+background-color:Snow;
+background-color:AntiqueWhite;
+background-color:HoneyDew;
+background-color:Azure;
+background-color:GhostWhite;
+background-color:FloralWhite;
+background-color:Snow;
+background-color:FloralWhite;
+}
+
+
+#iddate label{
+display: block;
+width: 200px;
+float: left;
+clear:left;
+text-align:right;
+height:15px;
+border:0px solid red;
+line-height: 16px;
+font-size:1em;
+}
+
+#iddate input { 
+height:15px;
+margin-left:5px;
+margin-bottom:6px;
+width:100px;
+}
+
+#iddate #idbutn{
+height:20px;
+margin-left:205px;
+}
+
+#idstation{ 
+width:100px;
+margin-left:5px;
+margin-bottom:6px;
+}
+#idsize{ 
+width:100px;
+margin-left:5px;
+margin-bottom:6px;
+}
+#idtime{ 
+width:100px;
+margin-left:5px;
+margin-bottom:6px;
+}
+#idlog{ 
+width:100px;
+margin-left:5px;
+margin-bottom:6px;
+}
+#idlog:hover{ 
+    color: #FF00FF;
+}
+
+</style>
+
+<script type="text/javascript">
+function rangemax()
+{
+//meging  disminmax with this function
+
+var sel = document.getElementById("idsize");
+
+var index= sel.selectedIndex;
+
+var vsel = sel[index].value;
+
+
+var rmaxv = document.getElementById("idmax");
+
+if ( vsel == 2 ) {
+
+  
+rmaxv.value = "1000";
+document.getElementById("spmax").innerHTML=rmaxv.value + " " + "nm";
+//
+}
+else{
+var rmax=document.getElementById("idmax").value;
+document.getElementById("spmax").innerHTML=rmax + " " + "nm";
+}
+return true;
+}
+function rangemin(newvalue)
+{
+//meging  disminmax with this function
+
+var sel = document.getElementById("idsize");
+
+var index= sel.selectedIndex;
+
+var vsel = sel[index].value;
+
+
+var rminv = document.getElementById("idmin");
+
+if ( vsel == 2 ) {
+
+  
+rminv.value = "1";
+document.getElementById("spmin").innerHTML=rminv.value + " " + "nm";
+
+//
+}
+else{
+
+document.getElementById("spmin").innerHTML=newvalue + " " + "nm";
+}
+return true;
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+  function disminmax(){
+
+  var sel = document.getElementById("idsize");
+
+  var index= sel.selectedIndex;
+
+  var vsel = sel[index].value;
+
+  var rmax = document.getElementById("maxwrap");
+
+  var rmin = document.getElementById("minwrap");
+
+  var sellog = document.getElementById("idlog");
+
+  var rmaxv = document.getElementById("idmax");
+
+  var rminv = document.getElementById("idmin");
+
+
+
+  if ( vsel == 2 ) {
+
+  rmax.style.visibility = "visible";
+  rmin.style.visibility= "visible";
+  
+
+  
+
+  rminv.value = "1";
+  rmaxv.value = "1000";
+  rangemin(rminv.value);
+  rangemax();
+  
+  var option = document.createElement("option");
+    option.text = "dSdlogDp";
+    option.value = "2";
+    
+  sellog.add(option);
+  
+  var option = document.createElement("option");
+    option.text = "dVdlogDp";
+  option.value = "3";
+    
+  sellog.add(option);
+
+
+//sellog.add(1);
+  //  sellog.add(2);
+
+}
+  else{
+  
+  rminv.value = "500";
+  rmaxv.value = "500";
+  rangemin(rminv.value);
+  rangemax();
+  
+  rmax.style.visibility = "visible";
+    rmin.style.visibility = "visible";
+  
+   sellog.remove(1);
+   var sellog1 = document.getElementById("idlog");
+    sellog1.remove(1);
+
+   
+  }
+  return true;
+}
+</script>
+
+
+
+
+<!--   analysis -->
+
+<!-- image slider thorn web design    this was moved to imageslider.js-->
+
+<!-- google map would be here -->
+
+<script>
+
+var map; 
+var marker;
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(61.5000, 24.1800),
+    zoom:2,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+  map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker=new google.maps.Marker({position: mapProp.center,});
+
+marker.setMap(map);
+}
+
+
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+ 
+function showMark()
+{
+
+var sel = document.getElementById("idstation");
+
+var index= sel.selectedIndex;
+
+var vsel = sel[index].text;
+
+
+
+
+if ( vsel == "Hyytiala" )
+{
+
+//alert ("you have chosen "+ vsel );
+
+var mapProp = {
+    center: new google.maps.LatLng(61.5000, 24.1800),
+    zoom:3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(null);
+
+marker=new google.maps.Marker({position: mapProp.center});
+
+marker.setMap(map);
+
+
+
+}
+
+if ( vsel == "Melpitz" )
+{
+
+//alert ("you have chosen "+ vsel );
+
+
+var mapProp = {
+    center: new google.maps.LatLng(51.32, 12.56),
+    zoom:3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(null);
+
+marker=new google.maps.Marker({position: mapProp.center});
+
+marker.setMap(map);
+
+
+
+
+}
+
+if ( vsel == "Aspvreten" )
+{
+
+//alert ("you have chosen "+ vsel );
+
+var myCenter=new google.maps.LatLng(51.5072,0.1275);
+var mapProp = {
+    center: new google.maps.LatLng(58.80578,17.38837),
+    zoom:3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(null);
+
+marker=new google.maps.Marker({position: mapProp.center});
+
+marker.setMap(map);
+
+}
+
+
+
+if ( vsel == "Zeppelin" )
+{
+
+//alert ("you have chosen "+ vsel );
+
+var mapProp = {
+    center: new google.maps.LatLng(78.90669,11.88934),
+    zoom:3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(null);
+
+marker=new google.maps.Marker({position: mapProp.center});
+
+marker.setMap(map);
+
+
+
+}
+
+
+if ( vsel == "Pallas" )
+{
+
+//alert ("you have chosen "+ vsel );
+
+var mapProp = {  
+    center: new google.maps.LatLng(67.58,24.06),
+    zoom:3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(null);
+
+marker=new google.maps.Marker({position: mapProp.center});
+
+marker.setMap(map);
+
+
+
+}
+
+
+
+
+}
+/*function addMarker(location) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+  markers.push(marker);
+}
+
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+  setAllMap(null);
+}
+
+// Shows any markers currently in the array.
+function showMarkers() {
+  setAllMap(map);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers() {
+  clearMarkers();
+  markers = [];
+}
+*/
+</script>
+
+<script type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+</script>
+
+<script>
+function init()
+{
+loadScript();
+//noBack();
+
+var browser = navigator.sayswho.toLowerCase();
+document.body.className += " " + browser;
+
+}
+</script>
+<script>
+window.onload=init;
+</script>
+<!-- google map -->
+
+
+  </head>
+  <?php flush(); ?>
+  <!--<body onpageshow="if (event.persisted) noBack();" onunload="">-->
+  <body>
+  
+    <div class="wrapper">
+      <div class="header">
+        <!--<div style="border:0px solid red;display:block;float:left;"> <img src="../images/itm-logo.85.gif"  height="100%" width="100%"/> </div>-->
+        <div style="border:0px solid red;display:block;float:right;"> <img src="../images/logotype-en.png"  style="width:100%;max-width:100%;"/> </div>
+        <div style="border:0px solid red;display:block;float:left;position:absolute;top:0;left:0px;"> <img src="../images/itm-head-en.gif"  style="width:100%;max-width:100%;"/> </div>
+
+
+        <div style="width:30%;padding-top:0px;min-height:175px;margin:0px auto;border:0px solid red;"><h1 id="ih1"><b>ACES data portal </b></h1></div>
+
+
+
+        <div id="i_search" class="csearch">
+          <form id="search" action="http://www.google.com/search" target="_blank">
+            <!--<label for="q">Search: </label>--> <input name="q" id="q" placeholder="itmad " size="20" class="txt" onFocus="resizew();" onBlur="resetw();"/> <input type="submit" value="Go" class="btn"/>
+          </form>
+              <!--<div id="searchbox">
+                <input type="text" name="search" size="25" id="idtext" placeholder="type your search here" autofocus/><input type="submit" value="SEARCH"/>
+       </div>        
+              -->
+</div>
+
+</div>
+
+
+<!--
+<form id="search_form" action="http://abcnews.go.com/search" onsubmit="return tgSearch(this);">
+<input type="text" id="search_input" name="searchtext" value="Search" maxlength="100" class="watermarkOn" />
+<input type="image" id="search_image" name="Search" alt="Search" src="http://a.abcnews.com/assets/images/navigation/search.png" />
+</form>
+-->

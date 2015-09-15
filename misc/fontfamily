@@ -1,0 +1,51 @@
+@font-face{
+
+font-family:Avenir;
+
+src:url("/sida/content/fonts/353dc12d-fb37-4fed-9186-d1c5103e819a.eot?iefix") format("eot");}
+
+@font-face{
+
+font-family:Avenir;
+
+src:url("/sida/content/fonts/353dc12d-fb37-4fed-9186-d1c5103e819a.eot?iefix");
+
+src:url("/sida/content/fonts/8de3f5b8-fbaa-49f9-88f2-abb9819a8cf7.woff?iefix") format("woff"),
+
+    url("/sida/content/fonts/a5760f6a-f37b-4c02-8132-71ed1dfc1df0.ttf") format("truetype"),
+
+    url("/sida/content/fonts/12b392b1-29e3-4914-92d3-cf207e1c5a6c.svg#12b392b1-29e3-4914-92d3-cf207e1c5a6c") format("svg");
+
+}
+
+@font-face{
+
+font-family:Avenir;
+
+font-weight: bold;
+
+src:url("/sida/content/fonts/60c9edc5-0526-4041-a3e7-db28207bace3.eot?iefix") format("eot");}
+
+@font-face{
+
+font-family:Avenir;
+
+font-weight: bold;
+
+src:url("/sida/content/fonts/60c9edc5-0526-4041-a3e7-db28207bace3.eot?iefix");
+
+src:url("/sida/content/fonts/f798351f-44b7-4c7b-a8ba-00fd2a5cd3c8.woff?iefix") format("woff"),
+
+    url("/sida/content/fonts/a3f97274-8e6d-4c74-9dc3-ae988798ed5f.ttf") format("truetype"),
+
+    url("/sida/content/fonts/4629ed47-0ef9-4384-b6b9-9f5c6b9b7837.svg#4629ed47-0ef9-4384-b6b9-9f5c6b9b7837") format("svg");
+
+}
+
+.avenir { font-family:Avenir, Arial, Helvetica, Sans-Serif; }
+
+.avenir h1 a { font-family:Avenir, Arial, Helvetica, Sans-Serif;font-weight: bold; }
+
+.avenir p { font-family:Avenir, Arial, Helvetica, Sans-Serif; }
+
+.avenir-bold { font-family:Avenir, Arial, Helvetica, Sans-Serif;font-weight: bold; }

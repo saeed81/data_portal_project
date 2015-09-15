@@ -1,0 +1,48 @@
+#!/bin/bash
+#
+#######
+### Using 1 node:
+###SBATCH -N 1
+###SBATCH -J IWGEN
+#####SBATCH -t 24:00:00
+####SBATCH -p share
+#####SBATCH -o amp.out
+#####SBATCH -e amp.err
+#######
+#
+#
+# To launch the batch:
+# sbatch ./EXAMPLE_BATCH_VAGN.sh
+#
+# To view the queue:
+# squeue
+#
+# To cancel a job:
+# scancel
+#
+#./my_big_exe
+#./iwgen.x
+#make clean
+#./bashfortran.sh $1
+#make clean 
+#make
+#./main.x -f namelist_etopo2 
+#./main.x -f namelist_etopo2 1
+#./main.x -f namelist_etopo2 2
+#./main.x -f namelist_etopo2 3
+#./main.x -f namelist_etopo2 4
+#./main.x -f namelist_etopo2 5
+#./main.x -f namelist_etopo2 6
+
+hostname 
+
+for jm in `seq 1 4`;do
+    
+    nm=`printf "%03d" ${jm}`
+
+    echo ${nm}
+
+    ./sum.x "${jm}" "${jm}"
+
+done
+

@@ -1,0 +1,63 @@
+<?php
+
+// Start output buffering.
+
+ob_start();
+
+// Initialize a session.
+
+session_start();
+
+require_once('configmsgbrd.php');
+require_once('./includes/recaptchalib.php');
+
+
+//////// End of connecting to database ////////
+
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Playing With Layouts</title>
+<style> 
+
+body {
+	background-color: #FFF;
+}
+
+#header {
+	background-color: #006;
+	color: #FFF;
+	padding: 20px;
+}
+
+#footer {
+	background-color: #006;
+	color: #FFF;
+	padding: 20px;
+}
+
+#lypsum { 
+	padding: 15px;
+	background-color: #FAF0E6; 
+	margin-right: 230px;
+	margin-top: 5px;
+} 
+
+#login { 
+	padding: 10px;
+	padding-bottom: 15px;
+	border: None;  
+	background-color: CornSilk; 
+	width: 200px; 
+	text-align: left; 
+	float: right; 
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
+} 
+
+</style>
+
+</head>

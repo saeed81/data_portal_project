@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>jQuery UI Datepicker functionality</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#datepicker-1" ).datepicker();
+         });
+      </script>
+
+
+            <script>
+         $(function() {
+            $( "#slider-3" ).slider({
+               range:true,
+               min: 3,
+               max:1000 ,
+               values: [ 3, 1000 ],
+               slide: function( event, ui ) {
+                  $( "#price" ).val( "nm" + ui.values[ 0 ] + " - nm" + ui.values[ 1 ] );
+               }
+           });
+         $( "#price" ).val( "nm" + $( "#slider-3" ).slider( "values", 0 ) +
+            " - nm" + $( "#slider-3" ).slider( "values", 1 ) );
+         });
+      </script>
+
+
+
+
+
+   </head>
+   <body>
+      <!-- HTML --> 
+      <p>Enter Date: <input type="text" id="datepicker-1"></p>
+
+
+      <p>
+        <label for="price">Size Range:</label>
+        <input type="text" id="price" 
+               style="border:100px; color:#b9cd6d; font-weight:bold;width:25%">
+      </p>
+      <div id="slider-3" style="border:100px; color:#b9cd6d; font-weight:bold;width:15%;margin-right:auto;margin-left:auto;"></div>
+
+
+
+   </body>
+</html>
+
+
+
+
+

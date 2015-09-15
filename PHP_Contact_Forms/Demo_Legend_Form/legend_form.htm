@@ -1,0 +1,52 @@
+<style>
+p{padding:0;margin:0;font-family:"Times New Roman", serif;
+letter-spacing: 1px;background-color:#f1f1f1;margin-bottom:5px;margin-top:5px;}
+legend{margin-top:10px;border:1px solid #444;padding:5px;margin-bottom:15px;background-color:#f1f1f1;}
+fieldset{width:300px;margin-left:20px;border:1px solid #444;padding:5px;}
+</style>
+
+<form action="mail.php" method="POST">
+<fieldset>
+<legend>Contact Information</legend>
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Phone</p> <input type="text" name="phone">
+</fieldset>
+<br />
+<fieldset>
+<legend>Request Call Back</legend>
+<p>Request Phone Call:</p>
+Yes:<input type="checkbox" value="Yes" name="call"><br />
+No:<input type="checkbox" value="No" name="call"><br />
+</fieldset>
+<br />
+<fieldset>
+<legend>Other Information</legend>
+<p>Website</p> <input type="text" name="website">
+
+<p>Priority</p>
+<select name="priority" size="1">
+<option value="Low">Low</option>
+<option value="Normal">Normal</option>
+<option value="High">High</option>
+<option value="Emergency">Emergency</option>
+</select>
+<br />
+
+<p>Type</p>
+<select name="type" size="1">
+<option value="update">Website Update</option>
+<option value="change">Information Change</option>
+<option value="addition">Information Addition</option>
+<option value="new">New Products</option>
+</select>
+<br />
+</fieldset>
+<br />
+<fieldset>
+<legend>Your Message</legend>
+<p>Message</p><textarea name="message" rows="8" cols="29"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
+</fieldset>
+</form>
+

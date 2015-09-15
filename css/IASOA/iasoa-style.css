@@ -1,0 +1,1200 @@
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+/* Add general site styling here for typography and background */
+body {
+  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+  overflow-y:scroll;
+}
+
+/* Default link styles - separate a:visited for a different visited link style */
+a,
+a:link,
+a:visited {
+}
+
+/* Hover/active link styles. Don't forget :focus for accessibility */
+a:hover,
+a:focus,
+a:active {
+}
+
+button {
+    border:1px solid #000000;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    cursor:pointer;
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    
+}
+
+button:hover {
+background: rgb(204,204,204); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+
+}
+
+.button a,
+.button a:link,
+.button a:visited,
+a.button,
+a.button:link,
+a.button:visited {
+	
+}
+
+.button a:hover,
+.button a:active,
+a.button:hover,
+a.button:active {
+	
+}
+
+
+/* Specific Typography
+-------------------------------------------------------------- */
+#site-name {
+  font-size: 300%;
+  font-weight: normal;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.footer-message {
+  font-size: 90%;
+}
+
+
+/* HTML Elements
+-------------------------------------------------------------- */
+body {
+   background: url(../sea-ice.jpg) no-repeat center center fixed; 
+	margin:0;
+	padding:0;
+	height: auto;
+	background-color: #999999;
+/*  	background-image: url("../bodybg.png");
+	background-repeat: repeat-x;
+	background-position: top;
+	margin:0;
+	padding:0;
+	height: auto;
+	background-color: #999999;
+*/
+}
+
+/* Site Info
+-------------------------------------------------------------- */
+/* Wrapper around logo, site name, and slogan */
+.header-site-info span {
+  display: block;
+
+}
+.header-site-info {
+	  height:85px;
+}
+
+/* Add float here to put logo and site name side by side, also add margins as
+  needed */
+#logo {
+ 	position: absolute;
+ 	float: left;
+ 	margin-left: -13px;
+ 	top: -2px;
+	height: 160px;
+	background-image: url("../logo_2014.png");
+	background-repeat: no-repeat;
+	width: 160px;
+  
+}
+
+
+
+
+/* Link and hover styles for site name */
+#site-name a:link,
+#site-name a:visited,
+#site-name a:hover,
+#site-name a:active {
+}
+
+/* Typography for site slogan */
+#slogan {
+	position: relative;
+	top: 0px;
+	margin-top: 35px;
+	font-weight:bold;
+	left: 140px;
+	color: rgba(26,57,96,1);
+	font-size: 27px;
+	text-transform:uppercase;
+	font-family: Calibri, sans-serif;
+	text-shadow:  1px 1px 1px #bebebe;
+}
+
+.caps {
+	font-size:50px;
+	font-weight:bold;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px 2px #666;
+}
+
+/* Regions
+
+  Classes (.region-name) should always be used instead of IDs (#region-name) so
+  that skin styles can override them with a class later
+-------------------------------------------------------------- */
+
+/* All Regions
+-------------------------------------------------------------- */
+/* By default this wrapper is set to 100% width and centered -- override here to
+  narrow wrapper or align left or right */
+.page {
+  
+}
+
+/* The 0 values here remove padding and spacing at the bottom of the page.
+  Remove to add a gap at the very bottom of the page */
+.page-inner {
+  border: 0;
+  margin-bottom: 0;
+  padding: 0;
+  
+}
+
+
+/* Header Regions
+-------------------------------------------------------------- */
+/* Header Top region to the bottom of Header region */
+/* For full-width header background, add background image/color here */
+.header-group-wrapper {
+  
+}
+
+.header-group {
+	height: auto;
+	  padding-top: 15px;
+background: rgb(26,57,96); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(26,57,96,0.75) 0%, rgba(160,177,203,0.75) 22%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(26,57,96,0.75)), color-stop(22%,rgba(160,177,203,0.75))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(26,57,96,0.75) 0%,rgba(160,177,203,0.75) 22%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(26,57,96,0.75) 0%,rgba(160,177,203,0.75) 22%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(26,57,96,0.75) 0%,rgba(160,177,203,0.75) 22%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(26,57,96,0.55) 0%,rgba(160,177,203,1) 40%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3960', endColorstr='#a0b1cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	  
+	  
+	  
+// background: -moz-linear-gradient(-45deg, rgba(26,57,96,0.75) 0%, rgba(216,217,217,0.75) 45%); /* FF3.6+ */
+//background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(26,57,96,0.75)), color-stop(45%,rgba(216,217,217,0.75))); /* Chrome,Safari4+ */
+//background: -webkit-linear-gradient(-45deg, rgba(26,57,96,0.75) 100%,rgba(216,217,217,0.75) 100%); /* Chrome10+,Safari5.1+ */
+//background: -o-linear-gradient(-45deg, rgba(26,57,96,0.75) 0%,rgba(216,217,217,0.75) 45%); /* Opera 11.10+ */
+//background: -ms-linear-gradient(-45deg, rgba(26,57,96,0.75) 0%,rgba(216,217,217,0.75) 45%); /* IE10+ */
+//background: linear-gradient(135deg, rgba(26,57,96,0.75) 0%,rgba(216,217,217,0.75) 45%); /* W3C */
+//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3960', endColorstr='#d8d9d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Header Top region which sits above the header */
+/* Works well with inline login or inline menu block style */
+.header-top-wrapper {
+}
+
+.header-top {
+
+}
+
+
+/* Main Menu
+/-------------------------------------------------------------- */
+/* Add general styles for main menu here, such as typography, borders, floats,
+  or spacing above/below */
+.main-menu {
+	margin-top: -20px;
+}
+
+
+/* These styles work well with the Superfish module. 
+ * http://www.drupal.org/project/superfish */
+ 
+.block-menu {
+  
+  display: inline-block;
+ margin-bottom: 0em; 
+
+}
+
+.main-menu-inner {
+  padding-left:130px;
+  text-align: center;
+}
+
+/* styles for Superfish main menu */
+.main-menu-inner ul.sf-menu {
+   
+   
+}
+
+/* Link style for top level menu items, add padding here */
+.main-menu-inner ul.sf-menu a,
+.main-menu-inner ul.sf-menu a:visited  {
+  color: rgba(26,57,96,1);
+}
+.main-menu-inner ul.sf-menu li:hover a,
+.main-menu-inner ul.sf-menu a:hover,
+.main-menu-inner ul.sf-menu a:active,
+.main-menu-inner ul.sf-menu a:focus {
+	color: white;
+  border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+  background: #5b5b5b; /* Old browsers */
+  background: -moz-linear-gradient(top, #5b5b5b 0%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5b5b), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #5b5b5b 0%,#0e0e0e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  
+}
+
+/* These are the top level menu items, add border-right here for separators */
+.main-menu-inner ul.sf-menu li {
+  border-right: 1px solid;
+  border-color: #dcdcdc;
+  line-height: 100%; 
+
+}
+
+.main-menu-inner ul.sf-horizontal li {
+  border-right: 0px solid;
+  border-color: #dcdcdc;
+  line-height: 98%; 
+  font-size: 15px;
+
+}
+
+.main-menu-inner li.sf-depth-2 {
+  border-right: 1px solid !important;
+   border-left: 1px solid !important;
+  border-color: #dcdcdc;
+  line-height: 100%; 
+  font-size: 13px !important;
+  text-align:left;
+
+}
+
+.main-menu-inner ul.sf-menu li li.first {
+   border-right: 0px;
+}
+/* Add border-right: 0; here to remove separator on last menu item */
+.main-menu-inner ul.sf-menu li.last {
+      border-right: 0px;
+}
+
+
+/* Style for container of dropdown, add background or border */
+.main-menu-inner ul.sf-menu ul {
+	margin-top: -1px;
+}
+
+/* Style for individual dropdown menu items, add border-bottom for separators */
+.main-menu-inner ul.sf-menu li:hover li a {
+	background: #0077b7;
+}
+
+.main-menu-inner ul.sf-menu li li {
+  position: relative;
+  background: #0077b7;
+  border-bottom: 0px solid;
+  border-color: #dcdcdc;
+  line-height: 100%;
+  opacity:0.9;
+filter:alpha(opacity=90); /* For IE8 and earlier */
+z-index: 500;
+}
+
+.main-menu-inner ul.sf-menu li li.last {
+ border-bottom: 1px solid !important;
+  border-color: #dcdcdc;
+}
+
+.main-menu-inner ul.sf-menu li li li {
+}
+
+/* Style for hover of dropdown menu items (add background-color here) */
+.main-menu-inner ul.sf-menu li li a:hover,
+.main-menu-inner ul.sf-menu li ul li:hover,
+.main-menu-inner ul.sf-menu li ul li.sfHover {
+  background: #5b5b5b; /* Old browsers */
+  background: -moz-linear-gradient(top, #5b5b5b 0%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5b5b), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #5b5b5b 0%,#0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #5b5b5b 0%,#0e0e0e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  
+ 
+}
+
+.main-inner {
+ box-shadow: 0px 0px 7px #000;
+}
+
+.main-menu-wrapper {
+  position: relative;
+ border-color: #000000;
+ z-index: 500;
+
+ 
+
+}
+
+
+/*  Preface Regions
+-------------------------------------------------------------- */
+/* The Preface Top region sits between the header and the Main Area
+ (columns, sidebars, and main content).  The Preface Bottom region
+ is inside the Main Area. */
+.preface-top-wrapper {
+}
+
+.preface-top {
+}
+
+.preface-top-inner {
+}
+
+.preface-bottom {
+}
+
+.preface-bottom-inner {
+}
+
+
+/*  Main Area (content + sidebars + preface bottom + postscript top)
+-------------------------------------------------------------- */
+.main-wrapper {
+}
+
+.main {
+  padding-top: 0px;
+ 
+  background-color: #ffffff; 
+}
+
+/* Sidebar Regions
+-------------------------------------------------------------- */
+/* Sidebar widths can be controlled through theme settings */
+.region-sidebar-first {
+	padding-top: 5px;
+}
+
+.sidebar-second {
+}
+
+
+/* Content Regions
+-------------------------------------------------------------- */
+.content {
+
+  
+}
+
+.content-inner {
+}
+
+/* This region only appears on full node pages. It's useful for ads or other
+  content between the body of the node and its comments */
+.node-bottom {
+}
+
+/*  Postscript & Footer Regions
+-------------------------------------------------------------- */
+.postscript-top {
+}
+
+.postscript-top-inner {
+}
+
+.postscript-bottom-wrapper {
+}
+
+.postscript-bottom {
+}
+
+.postscript-bottom-inner {
+}
+
+.footer-wrapper {
+}
+
+.footer {
+}
+
+.footer-inner {
+}
+
+
+/* Page titles
+/-------------------------------------------------------------- */
+/* Page and full node titles */
+h1.title {
+  margin-top: 20px;
+  // padding-left: 20px;
+  // background-image: url(../contentheading.png);
+ background-repeat: no-repeat; 
+ background-position: left center;
+ font-size: 1.5em;
+ line-height: 80%;
+}
+
+h1.title:before {
+	position:relative;
+	display:inline;
+	padding-right: 5px;
+	top: 5px;
+	content:url(../snowFlake-blueIcon.25.png);
+
+}
+
+h1.title-research {
+   background-image: none !important;
+   padding-left: 0px;
+    font-size: 2em;
+}
+
+h1.title img {
+	height: 25px;
+	width: 41px;
+	padding-right: 5px;
+	
+}
+
+
+/* Default node styles
+/-------------------------------------------------------------- */
+/* Change unpublished and preview colors for dark background themes */
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+
+/* Typography for node titles */
+h2.title {
+}
+
+/* Colors and styles for linked node titles, ie. teaser listing at /node */
+h2.title a:link,
+h2.title a:visited {
+}
+
+h2.title a:hover,
+h2.title a:focus,
+h2.title a:active {
+}
+
+/* Separators and padding for node teasers */
+.node-teaser {
+}
+
+/* Author/date info */
+.meta {
+}
+
+.submitted {
+}
+
+/* Links for nodes (taxonomy, commenting, read more, etc) */
+.node ul.links li {
+}
+.node ul.links a {
+}
+
+/* Only more/read more links */
+div.node .read-more a,
+div.node .more-link a {
+}
+
+/* Nodes
+/-------------------------------------------------------------- */
+div.node {
+  margin-bottom: 0em;
+}
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+/* General style for all errors/messages (border, padding, etc.) */
+div.content-messages div.messages,
+div.content-help div.help {
+}
+
+/* Status messages: green */
+div.content-messages-inner div.status {
+}
+
+/* Warning messages: yellow */
+div.content-messages-inner div.warning {
+}
+
+/* Error messages: red */
+div.content-messages-inner div.error {
+}
+
+/* Help messages: blue */
+div.content-help-inner div.help {
+}
+
+/* Error that appears when a required form field is not filled out */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #aa1144;
+}
+
+/* "New" text and required form field asterisk (default = red) */
+.marker,
+.form-required {
+  color: #aa1144;
+}
+
+
+/* Default block title styles
+/-------------------------------------------------------------- */
+h2.block-title {
+}
+
+
+/* Breadcrumbs
+-------------------------------------------------------------- */
+.breadcrumbs {
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+}
+
+
+/* Tab Menus
+/-------------------------------------------------------------- */
+#content-tabs {
+  background-color: transparent;
+  float: left; /* LTR */
+  margin: 20px 0;
+  padding: 0;
+}
+
+#content-tabs ul.primary,
+#content-tabs ul.secondary {
+  border-bottom: 1px solid #000;
+  clear: both;
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0 10px;
+}
+
+#content-tabs ul.secondary {
+  border-bottom: 1px solid #555;
+  margin-top: 10px;
+  text-transform: lowercase;
+}
+
+#content-tabs ul.primary li,
+#content-tabs ul.secondary li {
+  border-style: none;
+  display: inline;
+  float: left; /* LTR */
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+#content-tabs ul.primary li a:link,
+#content-tabs ul.primary li a:visited,
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  float: left; /* LTR */
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 6px 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  color: #555;
+}
+
+#content-tabs ul.primary li a.active:link,
+#content-tabs ul.primary li a.active:visited {
+  border-bottom: 4px solid #000;
+  color: #555;
+  padding-bottom: 2px;
+}
+
+#content-tabs ul.secondary li a.active:link,
+#content-tabs ul.secondary li a.active:visited {
+  border-bottom: 4px solid #555;
+  color: #777;
+  padding-bottom: 2px;
+}
+
+#content-tabs ul.primary li a:hover,
+#content-tabs ul.primary li a:focus,
+#content-tabs ul.secondary li a:hover,
+#content-tabs ul.secondary li a:focus {
+  border-bottom: 4px solid #777;
+  color: #777;
+  padding-bottom: 2px;
+}
+
+/* Pagers
+-------------------------------------------------------------- */
+ul.pager {
+}
+
+ul.pager li {
+}
+
+ul.pager a,
+ul.pager li.pager-current {
+  border-color: #333;
+}
+
+ul.pager li.pager-current {
+  background-color: #777;
+  color: #fff;
+}
+
+ul.pager a:hover,
+ul.pager a:active,
+ul.pager a:focus {
+  background-color: #777;
+  border-color: #333;
+  color: #fff;
+}
+
+/* Forms
+/-------------------------------------------------------------- */
+/* Typography and backgrounds for all form buttons */
+form input.form-submit {
+  margin: 0px;
+  padding: 0px 0px;
+  text-align: middle;
+}
+
+/* Hover style for form buttons */
+form input.form-submit:hover,
+form input.form-submit.hover,
+form input.form-submit:focus {
+}
+
+/* Typography, background, borders, padding for form fields */
+.form-item input,
+.form-item select,
+.form-item textarea {
+}
+
+/* Remove backgrounds and border on radios and checkboxes */
+.form-item .form-radio,
+.form-item .form-checkbox {
+  background: none;
+  border: none !important;
+}
+
+/* Fieldset wrapper around groups of form elements -- add border here */
+fieldset {
+}
+
+/* Typography and spacing for legend of fieldsets */
+fieldset legend {
+}
+
+/* Link style for legend of fieldsets */
+fieldset legend,
+legend.collapse-processed,
+legend.collapse-processed a:link,
+legend.collapse-processed a:visited {
+}
+
+/* Custom icons on (open) collapsible fieldsets */
+html.js fieldset.collapsible legend a:link,
+html.js fieldset.collapsible legend a:visited {
+}
+
+/* Custom icons on (closed) collapsible fieldsets */
+html.js fieldset.collapsed legend a:link,
+html.js fieldset.collapsed legend a:visited {
+}
+
+
+/* Tables
+-------------------------------------------------------------- */
+table {
+}
+
+/* Body of tables */
+tbody {
+  border-top: 1px solid #ccc;
+}
+
+/* Header of tables */
+thead th,
+th {
+  border-bottom: 3px solid #ccc;
+}
+
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Alternating row background styles */
+tr.even,
+tr.even td {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+tr.odd,
+tr.odd td {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+td.active {
+}
+
+tr.drag td,
+tr.drag-previous td {
+  color: #000;
+}
+
+
+/* Maintenance Page
+/-------------------------------------------------------------- */
+/* Maintenance page tpl file in Fusion Core has simplified layout, but you can
+  also add specific styles, such as a background, just for your offline page */
+.in-maintenance  {
+}
+
+
+/*--------------------------------------------------------------*/
+/* Module styles
+/-------------------------------------------------------------- */
+
+
+/* Book
+/-------------------------------------------------------------- */
+.book-navigation .menu {
+  border-top: 1px solid #ccc;
+}
+
+.book-navigation .page-links {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* Comments
+/-------------------------------------------------------------- */
+/* Style for each individual comment */
+div.comment {
+  padding: 0px;
+}
+
+/* Subject (title) of each comment */
+div.comment h3.title {
+}
+
+/* Links (edit, reply, delete) for each comment */
+div.comment div.links a,
+div.comment ul.links a {
+}
+
+/* Alternating styles for even/odd comments */
+.comments .comment.odd {
+  background-color: #fff;
+}
+
+.comments .comment.even {
+  background-color: #eee;
+}
+
+/* A special highlight style for a comment by the author of the node */
+.comments div.comment-by-author {
+  background-color: #ddd;
+}
+
+/* Comment signatures */
+.signature {
+  border-top: 1px solid #d6ddb9;
+}
+
+/* User avatars in comments */
+.comment-wrapper .picture img {
+}
+
+
+/* Forum
+/-------------------------------------------------------------- */
+#forum .description {
+}
+
+.forum-topic-navigation {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+
+/* Poll
+/-------------------------------------------------------------- */
+div.poll div.bar {
+  background-color: #ddd;
+}
+
+div.poll div.bar div.foreground {
+  background-color: #999;
+}
+
+
+/* Profiles
+/-------------------------------------------------------------- */
+.profile .picture {
+  float: none;
+}
+
+/* Styles for sub-headings on user profiles */
+.profile dt {
+  background-color: #ccc;
+}
+
+/* Views
+/-------------------------------------------------------------- */
+.block-views {
+ padding-top: 10px; 
+}
+
+
+.recentArticles {
+ padding-top: 0px;
+}
+
+.recentArticles p {
+  margin-top: 0em;
+  line-height: 120%;
+}
+.recentArticles .views-field-title {
+ //padding-left: 28px;
+ //background-image: url(../moduleh3.png);
+ // background-image: url(../blueSnowFlake.25.png);
+// background-repeat: no-repeat; 
+// background-size: 25px 25px;
+ background-position: left top;
+ font-family: "Lucida Grande", "Trebuchet MS", Tahoma;
+   font-size: 1.16em;
+  font-weight: bold;
+}
+
+
+
+.canWeHelpBlock {
+ padding-top: 10px;
+ border-top: 1px solid;
+ border-color: #dcdcdc;
+}
+
+.canWeHelpBlock .views-field-title {
+// padding-left: 20px;
+// background-image: url(../moduleh3.png);
+// background-repeat: no-repeat; 
+// background-position: left center;
+ font-family: "Lucida Grande", "Trebuchet MS", Tahoma;
+   font-size: 1.16em;
+  font-weight: bold;
+}
+
+.views-field-title:before {
+		position:relative;
+	display:inline;
+	padding-right: 5px;
+	top: 7px;
+	content:url(../blueSnowFlake.25.png);
+}
+
+
+.showbg {
+	height: 100%;
+   background: url('../sea-ice2.jpg') repeat-x; 
+    padding-bottom:30px;
+  
+}
+
+.block {
+ margin-bottom: 0px; 
+ 
+}
+
+.block-search {
+ width: auto; 
+ position: relative;
+ top: -90px;
+ left: 842px;
+ height: 0px;
+ 
+}
+
+.grid12-9 {
+     border-left: 0px solid;
+   border-color: #999999;
+}
+
+.main-group {
+  border-left: 2px solid; border-color: #999999; padding-left:1px; 
+}
+
+/* search form 
+-------------------------------------- */
+#search-block-form {
+	display: inline-block;
+	zoom: 1; /* ie7 hack for display:inline-block */
+	*display: inline;
+	border: solid 1px #d2d2d2;
+	padding: 3px 5px;
+	
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	-webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: 0 1px 0px rgba(0,0,0,.1);
+
+}
+
+ .form-text {
+	position: relative;
+	background: #fff;
+	padding: 6px 2px 2px 8px;
+	width: 150px;
+	border: solid 1px #bcbbbb;
+	outline: none;
+	height: 12px;
+
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+}
+.form-submit {
+  position: relative;
+  top: -2px;
+	color: #fff;
+	border: solid 1px #494949;
+	outline: none;
+	font-size: 10px;
+	height: 17px;
+	width: 47px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.6);
+
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	background: #5f5f5f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#454545));
+	background: -moz-linear-gradient(top,  #9e9e9e,  #454545);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie8 */
+}
+
+.form-submit:hover {
+	color: #0068ac;
+	
+} 
+
+.infoBlock {
+ border: 1px #cdcdcd solid; 
+ margin: 10px;
+ 	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+ border-radius: 2em;
+ // padding: 10px 10px;
+ overflow: hidden;
+}
+
+.weatherBlock {
+    position: relative;
+    height: 0px;
+      left: 580px;
+    top: -40px;
+    z-index: 99;
+}
+
+.block-translate-this {
+  position: relative;
+    float: right;
+    width:auto;
+    top:-55px;
+    right: -5px;
+}
+
+.bottomblocks {
+	    min-width: 175px;
+    border-radius: 10px;
+    margin: 0px 7px 10px 7px;
+    padding: 5px 0px 5px 5px;
+    border: 0px solid black;
+background: rgb(167,199,220); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */
+
+
+overflow:auto;
+box-shadow: 0px 1px 3px rgb(80, 100, 130) inset;
+float:left;
+height:400px;
+width:340px;
+}
+
+.bottomblocks h3 {
+	 border-radius: 10px 10px 0px 0px ;
+border-bottom: 1px solid #000;
+	margin-left: -7px;
+	padding-left: 15px;
+}
+
+.science-research-group td {
+	vertical-align: top;
+	text-align:center;
+	width: 33%;
+	
+}
+
+.science-research-group .field-content a {
+	color: black;
+	font-size: 1.5em;
+}
+
+.science-research-group .views-field-title {
+			 border-radius: 10px 10px 0px 0px ;
+border-bottom: 1px solid #000;
+	margin-left: -5px;
+	padding-right: 5px;
+	width: 100%;
+	height: 3.5em;
+    vertical-align: middle ;
+	
+}
+.science-research-group-item a:hover {
+	text-decoration:none;
+	
+	
+}
+.science-research-group-item a:active {
+	outline: none;
+	
+}
+
+.science-research-group-item {
+	   height: 175px;
+    border-radius: 10px;
+    margin: 0px 7px 10px 7px;
+    padding: 5px 0px 5px 5px;
+    border: 1px solid black;
+background: rgb(167,199,220); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */ 
+box-shadow: 0px 1px 3px rgb(80, 100, 130) inset;
+	}
+	
+.science-research-group-item:hover {
+	   height: 175px;
+    border-radius: 10px;
+    margin: 0px 7px 10px 7px;
+    padding: 5px 0px 5px 5px;
+    border: 1px solid black;
+background: rgb(167,199,220); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */ 
+box-shadow: 0px 1px 3px rgb(80, 100, 130);
+cursor:pointer;
+	}	
+	
+.views-field-field-logo img {
+	width: 200px;
+	height: 200px;
+	}
+
+
+TR.header-row TD.header-cell-data {
+	word-wrap: normal !important;
+	white-space:normal !important;
+	width: 8%;
+	text-align:center;
+}
+
+.sub-category-title-cell {
+	white-space: nowrap;
+}
+
+.translate-this-button {
+	font-size: 11px;
+	text-decoration:none;
+	color: rgba(26,57,96,1);
+border: solid 1px #d2d2d2;
+	padding: 2px 4px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: 0 1px 0px rgba(0,0,0,.1);
+}
+
+.translate-this-button:hover {
+	text-decoration:none;
+	background: rgba(26,57,96,0.65);
+	color:white;
+}
+

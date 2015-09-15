@@ -1,0 +1,90 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 10 October 2014 11:43:08
+*/
+
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: Arial, Helvetica, Sans Serif; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Arial, Helvetica, Sans Serif; }
+/*.ui-widget-content { border: 1px solid #aaaaaa; background: #ffffff url() 50% 50% repeat-x; color: #222222; }*/
+.ui-widget-content a { color: #5D7289;}
+.ui-widget-content a:hover { color: #000; }
+/*.ui-widget-header { border: 1px solid #aaaaaa; background: #cccccc url() 50% 50% repeat-x; color: #222222; font-weight: bold; }*/
+.ui-widget-header a { color: #FFFFFF; }
+/*#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6, #tabs-7, #tabs-8, #tabs-9, #tabs-10, #tabs-11, #tabs-12, #tabs-13, #tabs-14, #tabs-15, #tabs-16, #tabs-17, #tabs-18, #tabs-19, #tabs-20, #tabs-21, #tabs-22, #tabs-23, #tabs-24, #tabs-25, #tabs-26, #tabs-27{border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey; background:#f8f8f8;}*/
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: #eeeeee url(http://www.utas.edu.au/__data/assets/image/0005/65849/arrow-r.gif) 1.0em 1.0em no-repeat;
+    font-weight: normal; 
+    outline: none; 
+    border-bottom: 1px solid #ffffff;
+}
+.ui-state-hover {
+    border-bottom-width: 0px;    
+}
+.ui-state-default.ui-state-hover {
+    border-bottom-width: 1px;
+}    
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited   { 
+    text-decoration: none; 
+    outline: none;  
+}
+.ui-state-default a:visited { 
+    text-decoration: none; 
+    outline: none; 
+}
+
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover {
+    background: #ffffff url(http://www.utas.edu.au/__data/assets/image/0008/65834/arrow-b.gif) 1.0em 1.0em no-repeat; 
+    font-weight: normal; 
+    outline: none;
+    border-bottom-color: #cccccc; 
+}
+
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus {
+    background: #ffffff url(http://www.utas.edu.au/__data/assets/image/0008/65834/arrow-b.gif) 1.0em 1.0em no-repeat;
+    font-weight: normal; 
+    outline: none; 
+    border-color: #ffffff;
+}
+.ui-state-active {
+    background: #ffffff url(http://www.utas.edu.au/__data/assets/image/0003/65847/arrow-b-r.gif) 1.0em 1.0em no-repeat;
+}
+.ui-state-hover a, .ui-state-hover a:hover { 
+    color: #FFF; 
+    text-decoration: none; 
+    outline: none; 
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
+    color: #FFFFFF; 
+    outline: none; 
+    text-decoration: none;  
+
+}
+/*----------------------------------
+.ui-tabs { padding: .3em; height:1%; } 
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { position: relative; float: left; border-bottom-width: 0 !important; margin: 0 .2em -1px 0; padding: 0; }
+.ui-tabs .ui-tabs-nav li a { font-family: Arial; float: left; text-decoration: none; padding: .4em;font-weight:bold;}*/
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 1px; border-bottom-width: 0; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } 
+.ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+.ui-state-active a { border-bottom: dotted 2px #FFF; }

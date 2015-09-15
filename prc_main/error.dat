@@ -1,0 +1,7 @@
+warning: function ./test.m shadows a core library function
+gnuplot: /opt/MATLAB/bin/glnxa64/libtiff.so.5: no version information available (required by /usr/lib/x86_64-linux-gnu/libgd.so.3)
+gnuplot: /opt/MATLAB/bin/glnxa64/libtiff.so.5: no version information available (required by /usr/lib/x86_64-linux-gnu/libwx_gtk2u_core-2.8.so.0)
+gnuplot: /opt/MATLAB/bin/glnxa64/libtiff.so.5: no version information available (required by /usr/lib/x86_64-linux-gnu/libgd.so.3)
+gnuplot: /opt/MATLAB/bin/glnxa64/libtiff.so.5: no version information available (required by /usr/lib/x86_64-linux-gnu/libwx_gtk2u_core-2.8.so.0)
+/usr/bin/gs: /opt/MATLAB/bin/glnxa64/libtiff.so.5: no version information available (required by /usr/lib/libgs.so.9)
+
