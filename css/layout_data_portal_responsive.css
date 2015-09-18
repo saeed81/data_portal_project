@@ -657,7 +657,7 @@ height:100px;
 float:left;
 clear:right;
 text-align:center;
-outline:1px solid blue;
+outline:0px solid blue;
 position:relative;
 }
 ul#ulfoot li a{
@@ -668,68 +668,72 @@ line-height:100px;
 
 #divider1{
 width:1px;
-height:50px;
-border-left:4px solid red;
+height:20%;
+border-left:2px solid gray;
 border-right:0px solid black;
 border-top:0px solid gray;
 border-bottom:0px solid gray;
-margin-left:10px;
+margin-left:0px;
 display:inline-block;
 position:absolute;
 right:0px;
+top:40%;
 /*position:relative;*/
 }
 
 #divider2{
-width:0px;
+width:1px;
+height:20%;
 border-left:2px solid gray;
 border-right:0px solid black;
 border-top:0px solid gray;
 border-bottom:0px solid gray;
-height:17.5px;
+margin-left:0px;
 display:inline-block;
-position:relative;
-top:5px;
-left:17px;
-display:none;
+position:absolute;
+right:0px;
+top:40%;
+/*position:relative;*/
 }
 #divider3{
-width:0px;
+width:1px;
+height:20%;
 border-left:2px solid gray;
 border-right:0px solid black;
 border-top:0px solid gray;
 border-bottom:0px solid gray;
-height:17.5px;
+margin-left:0px;
 display:inline-block;
-position:relative;
-top:5px;
-left:9px;
-display:none;
+position:absolute;
+right:0px;
+top:40%;
+/*position:relative;*/
 }
 #divider4{
-width:0px;
+width:1px;
+height:20%;
 border-left:2px solid gray;
 border-right:0px solid black;
 border-top:0px solid gray;
 border-bottom:0px solid gray;
-height:17.5px;
+margin-left:0px;
 display:inline-block;
-position:relative;
-top:5px;
-left:6px;
-display:none;
+position:absolute;
+right:0px;
+top:40%;
+/*position:relative;*/
 }
 #divider5{
-width:0px;
+width:1px;
+height:20%;
 border-left:2px solid gray;
 border-right:0px solid black;
 border-top:0px solid gray;
 border-bottom:0px solid gray;
-height:17.5px;
+margin-left:0px;
 display:inline-block;
-position:relative;
-top:5px;
-left: 10px;
-display:none;
+position:absolute;
+right:0px;
+top:40%;
+/*position:relative;*/
 }
-
