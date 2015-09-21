@@ -6,6 +6,9 @@ $fig="";
 
 $myfig = array();
 
+$srcimg= "";
+
+
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     
 
@@ -15,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
       
     //$message = isset($_GET['message']) ? $_GET['message'] : '';
     
+    //$srcimg = $_GET['srcimg'];
   
     $fig=urldecode($_SERVER['QUERY_STRING']);
         
@@ -26,12 +30,26 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     
     foreach ($lfig as $elm)
     {
-        $nfig=explode('=',$elm);
-        $myfig[] = "/tmp/" . $nfig[1];
-        //echo $myfig[$nf] . "<br>";
+        if ($nf == 0 ) {
+            
+            $nfig=explode('=',$elm);
+            $srcimg = $nfig[1]; 
+        }
+        
+        else {
+            
+            $nfig=explode('=',$elm);
+        //$myfig[] = "/tmp/" . $nfig[1];
+            $myfig[] = $srcimg . $nfig[1];
+                 
+        }
+        
+        
+//echo $myfig[$nf] . "<br>";
         $nf++;
         
     }
+    
         
             
 }
@@ -127,11 +145,15 @@ a.fancybox:hover img
 
 <div ><?php echo $fig ?></div>
 
+<div ><?php echo $srcimg ?></div> 
+
 <?php 
 
     foreach ($myfig as $value)
     {
+        echo $value . "<br/>";
         
+
         //http://localhost/prc_main/download.php?file
         echo "<div style='visibility:visible'><img class='fancybox' src=$value alt='Smiley face' width='50%' height='50%'></div>" . "<br/>";
         echo "<a href=$value>Click here to zoom figure</a>" . "<br/>";

@@ -15,6 +15,7 @@ imatlab=1
 #/opt/MATLAB/bin/matlab -nodesktop -nosplash -nosoftwareopengl -singleCompThread -r test 1>/dev/null 
 
 #rm -f fig01* 
+srandom=`date +%s | sha256sum | base64 | head -c 32`
 
 spath=$$"_""`date +%Y_%m_%d_%H_%M_%S_%N`"
 
@@ -23,6 +24,8 @@ mkdir /home/saeed/tmp/${spath}
 touch /home/saeed/tmp/${spath}/note
 
 touch /home/saeed/tmp/${spath}/inputinfo
+
+srcimg="/tmp/${spath}/"
 
 #/home/saeed/DB_ITM/EBAS_routine/matlab_web/DMPS_AUTO_CRUNCH.exe "${1}" "${2}" "${3}" "${4}" "${5}" "${6}" "${7}" "${8}"  
 
@@ -39,14 +42,18 @@ echo "${#}" >> /home/saeed/tmp/${spath}/note
 
 cp -a DMPS_AUTO_CRUNCH.exe /home/saeed/tmp/${spath}
 
-cd /home/saeed/tmp/${spath}
+cp -a analysis.m /home/saeed/tmp/${spath}
 
+cp -a pgrep /home/saeed/tmp/${spath}
+
+cd /home/saeed/tmp/${spath}
 
 ./DMPS_AUTO_CRUNCH.exe
 
-cd -
+#cd -
 
-fpath='./' 
+fpath='./'
+fpath="/home/saeed/tmp/${spath}" 
 fname='/mnt/ramdisk/Full_TEMP.dat' 
 fname='Full_TEMP.dat' 
 savename="fig01""$$"
@@ -67,13 +74,13 @@ savename="fig""${1}"
 
 #nrun=`ps -ef | grep -v grep | grep -c MATLAB`
 
-nrun=`./pgrep -c MATLAB`
+#nrun=`./pgrep -c MATLAB`
 
 #npr=`ps aux | grep MATLAB | grep -v grep`
 
 #nrun=`echo $npr | wc -l`;
 
-nrun=`pgrep -c fc.exe`
+#nrun=`pgrep -c fc.exe`
 
 nrun=`pgrep -c pr_matlab.sh`;
 
@@ -178,7 +185,7 @@ fi
 
 
 if [ $imatlab -eq 1 ];then
-    /opt/MATLAB/bin/matlab -nodisplay -nodesktop -nosplash -nosoftwareopengl -r "analysis "$fpath./" "$fname" "$savename" "jpg" "prctile" "3";exit;" 1>/dev/null
+    /opt/MATLAB/bin/matlab -nodisplay -nodesktop -nosplash -nosoftwareopengl -r "analysis "$fpath" "$fname" "$savename" "jpg" "prctile" "3";exit;" 1>/dev/null
 else
     #/usr/bin/octave -f --no-gui --silent --no-window-system --traditional --eval "graphics_toolkit gnuplot;First_plot_1_octave('$fpath','$fname','$savename');exit;" &>error.dat
     /usr/bin/octave -f -q --no-gui --silent --no-window-system --traditional --eval "graphics_toolkit gnuplot;First_plot_1_octave('./','./Full_TEMP.dat','$savename','png','prctile','3');exit;" &>/dev/null
@@ -213,9 +220,11 @@ fi
 #cp ${savename}.jpg ${savename}_03.jpg
  
 #rm ${savename}.jpg  
-cp ${savename}_*.jpg /home/saeed/tmp
+
+
+#cp ${savename}_*.jpg /home/saeed/tmp !commented
 
 #echo "fig01.jpg"
 #echo "fig01.jpg"
-echo "fig=${savename}_01.jpg&fig=${savename}_02.jpg&fig=${savename}_03.jpg"
+echo "srcimg=${srcimg}&fig=${savename}_01.jpg&fig=${savename}_02.jpg&fig=${savename}_03.jpg"
 #echo ${savename}.tif

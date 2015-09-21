@@ -194,6 +194,12 @@ function ajaxAnalysis()
 
     var vsize = selsize[indexsize].text;
 
+    if ( selsize[indexsize].value == '2' ){
+        
+        vsize = "sizeresolved"
+    }
+
+
 
     var sellog = document.getElementById("idlog");
 
@@ -266,7 +272,7 @@ function ajaxAnalysis()
                  
                  vaj = "analysis/ajaxs.php?"+str.trim();
                  
-                 vaj = "analysis/?"+str.trim();
+                 vaj = "analysis/index.php?"+str.trim();
                  
                  window.location.href = vaj;
                  
