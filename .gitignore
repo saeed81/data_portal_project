@@ -1,4 +1,4 @@
-B1;3409;0cbin
+bin
 .metadata
 *~
 target/
@@ -11,3 +11,6 @@ target/
 analysis/*.x 
 
 analysis/*.jpg 
+
+analysis/*.dat
+
