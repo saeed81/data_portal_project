@@ -1,57 +1,57 @@
 //Browser Support Code
-     function ajaxAnalysis()
-     {
-         
-
+function ajaxAnalysis()
+{
+    
+    
         // window.alert('your figure will be ready soon. Close this prompt box to get your figure in no time')
 
-         var ajaxRequest;
+    var ajaxRequest;
          // The variable that makes Ajax possible!
-         
-         try{
-             
-             // Opera 8.0+, Firefox, Safari
-             ajaxRequest = new XMLHttpRequest();
-             
-         }
-         catch (e){
-             
-             // Internet Explorer Browsers
-             try{
+    
+    try{
+        
+        // Opera 8.0+, Firefox, Safari
+        ajaxRequest = new XMLHttpRequest();
+        
+    }
+    catch (e){
+        
+        // Internet Explorer Browsers
+        try{
                  
-                 ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
-                 
-             }
-             catch (e) {
-                 
-                 try{
+            ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+            
+        }
+        catch (e) {
+            
+            try{
                      
-                     ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-                     
-                 }
-                 catch (e){
+                ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                
+            }
+            catch (e){
                      
                      // Something went wrong
-                     alert("Your browser broke!");
+                alert("Your browser broke!");
                      
-                     return false;
-                     
-                 }
+                return false;
+                
+            }
                  
-             }
+        }
              
-         }
+    }
          
          
-         var lform = valForm();
+    var lform = valForm();
 
-         if (lform) {
+    if (lform) {
 
 
                          
          ajaxRequest.onreadystatechange=function() 
          {
-        
+             
                                                                                                                                                                       
              if (ajaxRequest.readyState < 4) {                        // while waiting response from server
                  
@@ -78,7 +78,7 @@
 
                  
                  document.getElementById("idajax").style.visibility = "hidden";
-                              
+                 
                  Alert.hideProgress();
                  
                  
@@ -96,26 +96,26 @@
              }
              
              
-             }
+         }
           
-         var strsnd= "x=" + "";
+        var strsnd= "x=" + "";
          
              
-         ajaxRequest.open("POST","analysis/show_post_matlab.php",true);
+        ajaxRequest.open("POST","analysis/show_post_matlab.php",true);
+        
+        ajaxRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        
+        ajaxRequest.send(strsnd);
     
-         ajaxRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                      
-             ajaxRequest.send(strsnd);
+    }
     
-             }
+    else{
+        
+        return false;
 
-         else{
-
-             return false;
-
-             }
+    }
          
-
+    
 }
 
 

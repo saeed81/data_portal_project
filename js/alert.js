@@ -30,7 +30,7 @@ document.getElementById(ifc).focus();
         var dialogoverlay = document.getElementById('wraprog');
         var dialogbox = document.getElementById('idajax');
         dialogoverlay.style.display = "block";
-        dialogoverlay.style.opacity = "1.0";
+        dialogoverlay.style.opacity = "0.8";
         dialogoverlay.style.height = winH+"px";
         dialogbox.style.left = (winW/2) - (550 * .5)+"px";
         dialogbox.style.top = "100px";

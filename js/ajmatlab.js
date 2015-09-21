@@ -1,10 +1,18 @@
-
 //Browser Support Code
+
+var vnum1;
+
+var vnum2;
+
+var rmin;
+
+var rmax;
+
 function valForm()
 {
-         var vnum1 = document.getElementById('datepicker1').value;
+         vnum1 = document.getElementById('datepicker1').value;
          
-         var vnum2 = document.getElementById('datepicker2').value;
+         vnum2 = document.getElementById('datepicker2').value;
          
          var sdate="";
 
@@ -107,8 +115,8 @@ function valForm()
         
          }
 
-    var rmin = parseInt(document.getElementById('idmin').value) ;
-    var rmax = parseInt(document.getElementById('idmax').value) ;
+    rmin = parseInt(document.getElementById('idmin').value) ;
+    rmax = parseInt(document.getElementById('idmax').value) ;
  
     if ( rmin >= rmax ){
 
@@ -120,118 +128,6 @@ function valForm()
     }
         
          return valid;
-}
-function ajaxAnalysis_old()
-     {
-         
-
-         //window.alert('your figure will be ready soon. Close this prompt box to get your figure in no time')
-
-         var ajaxRequest;
-         // The variable that makes Ajax possible!
-         
-         try{
-             
-             // Opera 8.0+, Firefox, Safari
-             ajaxRequest = new XMLHttpRequest();
-             
-         }
-         catch (e){
-             
-             // Internet Explorer Browsers
-             try{
-                 
-                 ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
-                 
-             }
-             catch (e) {
-                 
-                 try{
-                     
-                     ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-                     
-                 }
-                 catch (e){
-                     
-                     // Something went wrong
-                     alert("Your browser broke!");
-                     
-                     return false;
-                     
-                 }
-                 
-             }
-             
-         }
-
-     
-         var lform = true;
-
-         lform = valForm();
-
- 
-         if ( lform )
-
-         {    
-
-         ajaxRequest.onreadystatechange=function() 
-         {
-        
-                 
-             if (ajaxRequest.readyState==4 && ajaxRequest.status==200) {
-
-                                
-
-
-
-             }
-        
-         }
-        
-
-     
-                 
-         
-
-
-
-             //     var vnum1 = document.getElementById('num1').value;
-         
-             //var vnum2 = document.getElementById('num2').value;
-         
-         //var sex = document.getElementById('sex').value;
-         
-         //var queryString = "?age=" + age + "&wpm=" + wpm + "&sex=" + sex;
-         
-         //ajaxRequest.open("GET", "ajax-example.php" + queryString, true);
-         
-         //ajaxRequest.send(null);
-          
-         //var strsnd= "x=" + "";
-         
-         //var strsnd= "x=" + vnum1 + "&y=" + vnum2;
-         
-         //ajaxRequest.open("GET","./show_get.php" + strsnd,true);
-    
-        // ajaxRequest.open("POST","./show_post_matlab.php",true);
-    
-         //ajaxRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-         
-         //ajaxRequest.send();
-    
-        //ajaxRequest.send(strsnd);
-    
-
-     }
-     
-     else {
-
-
-         return false;
-
-
-}
-
 }
 
 //

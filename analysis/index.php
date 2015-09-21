@@ -16,22 +16,22 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     //$message = isset($_GET['message']) ? $_GET['message'] : '';
     
   
-        $fig=urldecode($_SERVER['QUERY_STRING']);
+    $fig=urldecode($_SERVER['QUERY_STRING']);
         
-        $lfig=explode('&',$fig);
+    $lfig=explode('&',$fig);
         
-        //print_r($lfig);
-        echo "<br>";
-        $nf = 0;
+    //print_r($lfig);
+    echo "<br>";
+    $nf = 0;
+    
+    foreach ($lfig as $elm)
+    {
+        $nfig=explode('=',$elm);
+        $myfig[] = "/tmp/" . $nfig[1];
+        //echo $myfig[$nf] . "<br>";
+        $nf++;
         
-        foreach ($lfig as $elm)
-        {
-            $nfig=explode('=',$elm);
-            $myfig[] = "/tmp/" . $nfig[1];
-            //echo $myfig[$nf] . "<br>";
-            $nf++;
-            
-        }
+    }
         
             
 }
