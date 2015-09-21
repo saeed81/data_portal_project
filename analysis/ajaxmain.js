@@ -201,12 +201,26 @@ function ajaxAnalysis()
 
     var vlog = sellog[indexlog].text;
 
+    if (vlog == "dNdlogDp")
+    {
 
+        vlog = "Numb";
+    }
+
+    else if (vlog == "dSdlogDp")
+    {
+        vlog = "Surf";
+    }
+    else if ( vlog == "dVdlogDp")
+    {
+        vlog = "Volu";
+    }
+    
     var seltime = document.getElementById("idtime");
 
     var indextime= seltime.selectedIndex;
 
-    var vtime = seltime[indextime].text;
+    var vtime = seltime[indextime].value;
 
 
     if (lform) {

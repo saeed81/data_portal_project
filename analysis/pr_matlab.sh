@@ -16,6 +16,36 @@ imatlab=1
 
 #rm -f fig01* 
 
+spath=$$"_""`date +%Y_%m_%d_%H_%M_%S_%N`"
+
+mkdir /home/saeed/tmp/${spath}
+
+touch /home/saeed/tmp/${spath}/note
+
+touch /home/saeed/tmp/${spath}/inputinfo
+
+#/home/saeed/DB_ITM/EBAS_routine/matlab_web/DMPS_AUTO_CRUNCH.exe "${1}" "${2}" "${3}" "${4}" "${5}" "${6}" "${7}" "${8}"  
+
+#echo "${1}" "${2}" "${3}" "${4}" "${5}" "${6}" "${7}" "${8}" >> /home/saeed/tmp/${spath}/note
+
+echo "${#}" >> /home/saeed/tmp/${spath}/note
+
+for var in ${*};do
+    echo $var >> /home/saeed/tmp/${spath}/note
+    echo $var >> /home/saeed/tmp/${spath}/inputinfo
+done
+
+echo "${#}" >> /home/saeed/tmp/${spath}/note
+
+cp -a DMPS_AUTO_CRUNCH.exe /home/saeed/tmp/${spath}
+
+cd /home/saeed/tmp/${spath}
+
+
+./DMPS_AUTO_CRUNCH.exe
+
+cd -
+
 fpath='./' 
 fname='/mnt/ramdisk/Full_TEMP.dat' 
 fname='Full_TEMP.dat' 
