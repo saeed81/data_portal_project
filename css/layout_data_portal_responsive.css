@@ -170,10 +170,11 @@ min-height:1400px;
 /*top : 0px;*/
 /*left:0px;*/ 
 border: 0px solid #a1a1a1;
-border-top-left-radius:2em;
-border-top-right-radius:2em;
-border-bottom-right-radius:2em;
-border-bottom-left-radius:2em;
+border-bottom: 0px;
+border-top-left-radius:0em;
+border-top-right-radius:0em;
+border-bottom-right-radius:0em;
+border-bottom-left-radius:0em;
 overflow:none;
 }
 .header{
@@ -206,6 +207,7 @@ margin-right:auto;
 margin-left:auto;
 display:block;
 position:relative;
+border: 2px solid #a1a1a1;
 /*overflow: auto;*/
 }
 #ih1{
@@ -315,7 +317,6 @@ background: -moz-linear-gradient(top, rgb(155,178,206) 36%, rgb(155,255,206) 73%
 background: -webkit-linear-gradient(top, #fff 36%, #ddd 73%);
 background: -moz-linear-gradient(top, #fff 36%, #ddd 73%);
 background:  linear-gradient(top, #fff 36%, #ddd 73%);
-
 text-align:center;
 border-radius:2.5%;
 }
@@ -524,6 +525,7 @@ background-color:white;
 margin-right:auto;
 margin-left:auto;
 padding-top:0px;
+border: 2px solid #a1a1a1;
 }
 .toggleMenu {
     display:  none;
@@ -590,12 +592,9 @@ background-repeat:no-repeat;
 color:#111111;
 clear:both;
 text-align:center;
-margin-top:0;
-/*margin-top:200px;*/
 line-height:100px;
 margin-right:auto;
 margin-left:auto;
-margin-bottom:0px;!important
 background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
 background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
@@ -605,10 +604,12 @@ background: -webkit-linear-gradient(bottom, rgb(163,168,107) 36%, rgb(163,200,10
 background: -moz-linear-gradient(bottom, rgb(163,168,107) 36%, rgb(163,200,107) 73%);
 border: 2px solid #a1a1a1;
 border: 2px solid #a1a1a1;
-border-top-left-radius:2em;
-border-top-right-radius:2em;
-border-bottom-right-radius:2em;
-border-bottom-left-radius:2em;
+border-top-left-radius:0em;
+border-top-right-radius:0em;
+border-bottom-right-radius:0em;
+border-bottom-left-radius:0em;
+margin-top:0px;
+border: 2px solid #a1a1a1;
 }
 #leftfoot{
 display:block;
