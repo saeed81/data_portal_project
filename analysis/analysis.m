@@ -1,11 +1,14 @@
-function analysis(fpath, fname, savename, extension, operator, no_clusts) 
+function analysis(fpath, fname, savename, extension, operator, no_clusts, iresolu) 
 
 itraj=0;
 idiurnal = 0;
 imonthly= 0;
-
+ihourly
 fclose all;
 
+if ( iresolu == 1) 
+  
+  
 %!DMPS_AUTO_CRUNCH.exe
 
 %!/home/saeed/DB_ITM/EBAS_routine/matlab_web/DMPS_AUTO_CRUNCH.exe
@@ -130,14 +133,16 @@ ylabel(cb, 'dN/dlogD_p, cm^{-3}', 'fontsize', 12)
 %saveas(3, [savename '_3'], 'tif');
 saveas(3, [savename '_03'], extension);
 
-if ( idiurnal == 1 )
-diurnal_average();
 end
+
 % --- Executes on button press in monthly_butt.
-if ( imonthly == 1 )
+if ( iresolu == 3 )
 monthly_average();
 end
 
+if ( iresolu == 4 )
+diurnal_average();
+end
 
 
 % --- Executes on button press in Source_butt.

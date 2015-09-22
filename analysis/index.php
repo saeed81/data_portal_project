@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $lfig=explode('&',$fig);
         
     //print_r($lfig);
-    echo "<br>";
+    //echo "<br>";
     $nf = 0;
     
     foreach ($lfig as $elm)
@@ -143,15 +143,21 @@ a.fancybox:hover img
 
 <!--<div id="div1" style="visibility:visible"><img id="myImage" src=<?php echo $x?> alt="Smiley face" width="50%" height="50%"></div>-->
 
-<div ><?php echo $fig ?></div>
+<!--<div ><?php echo $fig ?></div>-->
 
-<div ><?php echo $srcimg ?></div> 
+<!--<div ><?php echo $srcimg ?></div>--> 
+
+<!--<a href="http://localhost/" title="Main page"> Go back to the main page </a>-->
+
+<a href="http://localhost/index.php?page=analysis" title="E-TOOLS" style="width:200px;height:200px;background-color:cyan;">Go back to the analysis page</a>
+
+
 
 <?php 
 
     foreach ($myfig as $value)
     {
-        echo $value . "<br/>";
+        //echo $value . "<br/>";
         
 
         //http://localhost/prc_main/download.php?file
@@ -170,7 +176,6 @@ a.fancybox:hover img
 
 ?>
 
-<a href="http://localhost/" title="Main page"> Go back to the main page </a>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
