@@ -21,7 +21,7 @@ height:126px;
 margin:10px 10px 10px 20px;
 width:100px;
 -->
-
+<div style="width:45%;float:left">
 <div id="ps1" style="display:block;width:100%;border:1px solid gray;border-radius:20px;border-top-right-radius:10px;height:250px;background:AliceBlue">
   <img src="../images/saeed.jpg" class="psphoto" style="float:right;border:2px solid gray;border-radius:10px;"/><br> 
   <p style="font-size:1.5em">Saeed Falahat is a data analysts, scientific programmer, and webmaster.</p><br/>   
@@ -42,6 +42,88 @@ width:100px;
   <a href="http://www.aces.su.se/itm/page.php?pid=536&id=296" style="font-size:1.5em" target="_blank">Website</a><br/>
 
 </div>
+</div>
+<div id="ps4" style="display:block;float:right;height:600px;width:45%;border:1px solid gray;border-radius:1px;border-top-right-radius:1px;margin-top:0px;">
+
+
+<!-- contact form -->
+
+<div id="stylized" class="myform" style="border:2px solid gray;width:70%;border-radius:10px;margin:0 auto;">
+
+<form id="form1" id="form1" action="mail.php" method="POST">
+
+  <label for="idname" >Name
+    <span class="small">Add your name</span>
+  </label >
+  <input type="text" name="name" id="idname">
+  <label for="idemail">Email
+    <span class="small">Enter a Valid Email</span>
+  </label>
+  <input type="text" name="email" id="idemail">
+  <label for="idphone">Phone
+    <span class="small">Add a Phone Number</span>
+  </label>
+  <input type="text" name="phone" id="idphone">
+
+  <br />
+  <br />
+
+  <label for="idwebsite">Website
+    <span class="small">Your Website</span>
+    </label>
+ <input type="text" name="website" id="idwebsite">
+
+    <label>Priority  
+        <span class="small">Priority Level  </span>
+    </label>
+
+<select name="priority" size="1">
+<option value="Low">Low</option>
+<option value="Normal">Normal</option>
+<option value="High">High</option>
+<option value="Emergency">Emergency</option>
+</select>
+<br />
+<br />
+<br />
+    <label>Type
+        <span class="small">Type of Contact</span>
+    </label>
+<select name="type" size="1">
+<option value="update">Website Update</option>
+<option value="change">Information Change</option>
+<option value="addition">Information Addition</option>
+<option value="new">New Products</option>
+</select>
+<br />
+<br />
+<br />
+
+
+    <label for="idmessage">Message
+        <span class="small">Type Your Message</span>
+    </label>
+<textarea name="message" rows="6" cols="25" id="idmessage"></textarea><br />
+
+    <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+<div class="spacer"></div>
+
+</form>
+
+</div> <!-- end of form class -->
+
+<!-- end of contact form -->
+
+
+</div>
+
+
+
+
+
+
+
+
 
 
 </div>

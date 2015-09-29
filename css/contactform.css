@@ -3,12 +3,11 @@
     font-size:12px;
 }
 */
-p, h1, form, button{border:0; margin:0; padding:0;}
+/*p, h1, form, button{border:0; margin:0; padding:0;}*/
 .spacer{clear:both; height:1px;}
 /* ----------- My Form ----------- */
 .myform{
-    margin:0 auto;
-    width:400px;
+    width:100%;
     padding:14px;
 }
 /* ----------- basic ----------- */
@@ -48,7 +47,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     margin:2px 0 30px 10px;
     }
 #basic button{ 
-    clear:both;
+    /*clear:both;*/
     margin-left:150px;
     background:#888888;
     color:#FFFFFF;
@@ -102,7 +101,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     }
 #stylized button{ 
     clear:both;
-    margin-left:160px;
+    /*margin-left:160px;*/
     width:125px;
     height:31px;
     background:#444;
