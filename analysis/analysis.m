@@ -1,10 +1,11 @@
-function analysis(fpath, fname, savename, extension, operator, no_clusts, iresolu) 
+function analysis(fpath, fname, savename, extension, operator, no_clusts) 
 
 itraj=0;
 idiurnal = 0;
 imonthly= 0;
-ihourly
+ihourly=0; 
 fclose all;
+iresolu = 1;
 
 if ( iresolu == 1) 
   

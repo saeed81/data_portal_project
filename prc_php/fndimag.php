@@ -5,10 +5,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset ($_GET["dr"]) && !empty($_GET["dr"])){
         
         $dirimag = '/tmp/' . $_GET["dr"] . '/';
-        
+
         //$dirimag = '/tmp/25167_2015_09_22_17_52_12_166256387/';
 
         $dirimagf = '/home/saeed' . $dirimag;
+
+        if (!is_dir($dirimagf)){
+            die('invalid folder given!');
+        }
+         
 
         $images = scandir($dirimagf);
     }

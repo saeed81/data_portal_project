@@ -15,9 +15,9 @@ imatlab=1
 #/opt/MATLAB/bin/matlab -nodesktop -nosplash -nosoftwareopengl -singleCompThread -r test 1>/dev/null 
 
 #rm -f fig01* 
-srandom=`date +%s | sha256sum | base64 | head -c 32`
+srandom=`date +%s | sha256sum | base64 | head -c 6`
 
-spath=$$"_""`date +%Y_%m_%d_%H_%M_%S_%N`"
+spath=$$"_""`date +%Y_%m_%d_%H_%M_%S_%N`""_""${srandom}"
 
 mkdir /home/saeed/tmp/${spath}
 
