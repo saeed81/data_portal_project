@@ -1,6 +1,7 @@
 <?php
-header("Content-Type: application/json");
-
+//header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
 //sleep(5);
 
 if(isset($_POST["var1"]) && isset($_POST["var2"]) )

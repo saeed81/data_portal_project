@@ -103,17 +103,21 @@ function ajax_get_json1()
         if(hr.readyState == 4 && hr.status == 200 && hr.statusText == "OK" ) {
             
             console.log(hr.readyState);
+            //document.write(hr.responseText);
+	    //return;
             
-            var data = JSON.parse(hr.responseText);
-            
-            results.innerHTML = "";
+	    var data = JSON.parse(hr.responseText);
+
+	    results.innerHTML = "";
             
             var prop = "";
             
             var ncount = 0;
             
             for(var obj in data){
-                
+
+		//document.write(data[obj]);
+
                 
                 //results.innerHTML += "Property A: "+data[obj].propertyA+"<hr />";
                 
