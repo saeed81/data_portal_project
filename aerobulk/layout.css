@@ -1,0 +1,73 @@
+#iddate {
+    border:2px solid gray;
+    border-radius:10px;
+    width: 30%;
+    width: 365px;
+    height: 300px;
+    margin-top:10px;
+    margin-left:100px;
+    margin-right:auto;
+    position:relative;
+    /*position:absolute;*/
+    top:0px;
+    left:0px;
+    background-color:GhostWhite;
+    background-color:Snow;
+    background-color:AntiqueWhite;
+    background-color:HoneyDew;
+    background-color:Azure;
+    background-color:GhostWhite;
+    background-color:FloralWhite;
+    background-color:Snow;
+    background-color:FloralWhite;
+}
+
+
+#iddate label{
+    display: block;
+    width: 200px;
+    float: left;
+    clear:left;
+    text-align:right;
+    height:15px;
+    border:0px solid red;
+    line-height: 16px;
+    font-size:1em;
+}
+
+#iddate input {
+    height:15px;
+    margin-left:5px;
+    margin-bottom:6px;
+    width:100px;
+}
+
+#iddate #idbutn{
+    height:20px;
+    margin-left:205px;
+}
+
+#idstation{
+    width:100px;
+    margin-left:5px;
+    margin-bottom:6px;
+}
+#idsize{
+    width:100px;
+    margin-left:5px;
+    margin-bottom:6px;
+}
+#idtime{
+    width:100px;
+    margin-left:5px;
+    margin-bottom:6px;
+}
+#idlog{
+    width:100px;
+    margin-left:5px;
+    margin-bottom:6px;
+}
+#idlog:hover{
+    color: #FF00FF;
+}
+

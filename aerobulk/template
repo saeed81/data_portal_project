@@ -1,0 +1,25 @@
+ Give "zt", the altitude for air temp. and humidity in m (generally 2 or 10):
+ 2
+
+ Using a sea-level pressure of    101000.000000000
+
+ Give SST (deg. C):
+ 22
+
+ Give temperature at zt (deg. C):
+ 20
+
+Give specific humidity at zt (g/kg) (saturation is at 14.529 g/kg):
+12
+  => Relative humidity RH = 82.7%
+
+ Give wind speed at zu=10m (m/s):
+ 10
+
+
+ =========================================================================
+    Algorithm:           coare    |    ncar       |    ecmwf
+     =========================================================================
+      Wind stress      =   165.2200       149.6181       184.0079     (mN/m^2)
+       Latent heat flux =  -160.2106      -173.9968      -168.7723     (W/m^2)
+        Sens.  heat flux =  -32.60577      -33.13559      -33.05733     (W/m^2)
