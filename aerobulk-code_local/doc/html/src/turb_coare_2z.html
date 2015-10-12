@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>TURB_COARE_2Z</title>
+
+    <center>
+      <!--<embed type="image/svg+xml" src="images/aerobulk_logo.svg" />-->
+      <embed type="image/png" src="../images/aerobulk_logo.png" style="width:300px"/>
+    </center>
+
+    <!--<style type="text/css">
+        @page { size: 6.0in 11.69in }
+        </style>
+    -->
+  </head>
+
+
+  <body dir="ltr" lang="en-US"  bgcolor="white" style="margin:auto; width: 980px; border:1px solid #D8D8D8 ;">
+
+    <br/> <br/>
+
+    <div align="left" style="margin: 65px 40px 0px 40px; font-family: Courier; font-size: 28px;width: 900px;">
+      <b> > TURB_COARE_2Z, transfer coefficients with COAREv3</b>
+    </div> 
+    <div align="justify" style="margin: 10px 40px 0px 40px; font-family: Courier; font-size: 20px;width: 900px;">
+
+
+      Use <i>turb_coare_2z()</i> of module <b>mod_blk_coare</b> (mod_blk_coare.f90). Example of a call:
+
+      <pre style="margin: 0px 40px 20px 20px"><code style="font-family:Monospace; font-size: 14pt">
+PROGRAM TEST_COEFF
+  USE mod_const
+  USE mod_blk_coare
+    ...
+  CALL TURB_COARE_2Z(zt, zu, sst, t_zt, ssq, q_zt, U_zu, &
+       &             Cd, Ch, Ce, t_zu, q_zu, Ublk        &
+       &             l_charn_cst=.false.)
+    ...
+END PROGRAM TEST_COEFF
+      </code></pre>
+
+
+     INPUT ARGUMENTS:
+      <ul TYPE="SQUARE" style="margin: 0px 40px 20px 40px">
+        <li>  zt   : height for temperature and spec. hum. of air            [m]
+        <li>  zu   : height for wind speed (generally 10m)                   [m]
+        <li>  U_zu : scalar wind speed at 10m                                [m/s]
+        <li>  sst  : SST                                                     [K]
+        <li>  t_zt : potential air temperature at zt                         [K]
+        <li>  ssq  : specific humidity at saturation at SST                  [kg/kg]
+        <li>  q_zt : specific humidity of air at zt                          [kg/kg]
+      </ul>
+      
+      OUTPUT ARGUMENTS:
+      <ul TYPE="SQUARE" style="margin: 0px 40px 20px 40px">
+        <li>  Cd     : drag coefficient
+        <li>  Ch     : sensible heat coefficient
+        <li>  Ce     : evaporation coefficient
+        <li>  t_zu   : pot. air temperature adjusted at wind height zu      [K]
+        <li>  q_zu   : specific humidity of air adjusted at wind height zu  [kg/kg]
+        <li>  Ublk   : bulk wind at 10m                                     [m/s]
+      </ul>
+      
+      OPTIONAL ARGUMENT:
+      <ul TYPE="SQUARE" style="margin: 0px 40px 20px 40px">
+        <li> l_charn_cst : whether Charnock parameter is taken as a constant (0.011) or wind-dependent?
+      </ul>
+      
+
+      
+    </div>
+
+
+
+
+
+
+
+
+
+    <br>
+
+    <center>
+      <div align="center" style="margin: 35px 40px 0px 40px; font-family: Courier; font-size: 14px;width: 900px;">
+        <u>Contact</u><br><br>
+        <b>AeroBulk</b> is developed by Laurent Brodeau (Fortran 90) and Saeed
+        Falahat (C++, Python)
+        
+
+    </center>
+
+    <br><br><br>
+    
+  </body>
+</html>
